@@ -22,19 +22,6 @@
       font-size: 0.8rem;
       margin-bottom: 1rem;
     }
-
-    a {
-      color: #C0A062;
-      padding: 0.5rem 2%;
-      border: 1px solid #C0A062;
-      display: block;
-      margin: auto;
-      width: 40%;
-
-      @media (min-width: $breakpoint-m) and (max-width: $breakpoint-l) {
-        width: 20%;
-      }
-    }
   }
   @media (min-width: $breakpoint-m) and (max-width: $breakpoint-xl) {
     display: flex;

@@ -1,3 +1,5 @@
+@import "size";
+
 html {
   scroll-behavior: smooth;
   position: relative;
@@ -11,8 +13,22 @@ body {
   color: white;
   overflow-x: hidden;
 }
-h1, h2, h3, h4, h5{
+.links{
+  color: #C0A062;
+  padding: 0.5rem 2%;
+  border: 1px solid #C0A062;
+  display: block;
+  margin: auto;
+  font-size: 0.8rem;
+  width: 40%;
+  text-align: center;
+}
+h1, h2, h3, h4{
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+h2{
+  font-size: 1.2rem;
+  margin-bottom: 4rem;
 }
 a {
   text-decoration: none;
@@ -24,9 +40,6 @@ a {
 }
 .uppercase {
   text-transform: uppercase;
-}
-p{
-  line-height: 1.1rem;
 }
 .sr-only {
   border: 0 !important;

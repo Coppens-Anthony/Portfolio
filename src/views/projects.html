@@ -6,12 +6,12 @@
     <meta name="keywords" content="html, portfolio, projets, infographie, site, web, design">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="public/css/main.css">
+    <link rel="stylesheet" href="/public/css/main.css">
     <title>Portfolio</title>
 </head>
 <body>
 <header class="header">
-    <h1 class="sr-only">Accueil</h1>
+    <h1 class="sr-only">Mes projets</h1>
     <nav class="main-nav">
         <h2 class="sr-only">
             Navigation principale
@@ -26,29 +26,37 @@
             </label>
 
             <ul class="menu__box">
-                <li><a class="current_page menu__item" href="/" title="Vers la page d'Accueil">Accueil</a></li>
-                <li><a class="menu__item menu__item" href="src/views/about.html" title="Vers la page à propos">À propos</a></li>
-                <li><a class="menu__item menu__item" href="src/views/projects.html" title="Vers mes projets ">Projets</a></li>
-                <li class="contact-nav"><a class="menu__item" href="src/views/contact.html" title="Vers la page de Contact">Contact</a></li>
+                <li><a class="menu__item" href="/" title="Vers la page d'Accueil">Accueil</a></li>
+                <li><a class=" menu__item menu__item" href="" title="Vers la page à propos">À propos</a>
+                </li>
+                <li><a class="current_page menu__item menu__item" href="projects.html"
+                       title="Vers mes projets ">Projets</a></li>
+                <li class="contact-nav"><a class="menu__item" href="contact.html" title="Vers la page de Contact">Contact</a>
+                </li>
             </ul>
             <ul class="desktop-nav">
-                <li><a class="current_page menu__item" href="/" title="Vers la page d'Accueil">Accueil</a></li>
-                <li><a class="menu__item menu__item" href="src/views/about.html" title="Vers la page à propos">À propos</a></li>
-                <li><a class="menu__item menu__item" href="src/views/projects.html" title="Vers mes projets ">Projets</a></li>
-                <li class="contact-nav"><a class="menu__item" href="src/views/contact.html" title="Vers la page de Contact">Contact</a></li>
+                <li><a class="menu__item" href="/" title="Vers la page d'Accueil">Accueil</a></li>
+                <li><a class=" menu__item menu__item" href="" title="Vers la page à propos">À propos</a>
+                </li>
+                <li><a class=" current_page menu__item menu__item" href="projects.html" title="Vers mes projets ">Projets</a>
+                </li>
+                <li class="contact-nav"><a class="menu__item" href="contact.html" title="Vers la page de Contact">Contact</a>
+                </li>
             </ul>
         </div>
     </nav>
 </header>
-<main class="home">
-    <div>
-        <h2>WEB DEVELOPER</h2>
-        <h3>Anthony Coppens</h3>
-        <p>Bienvenue sur mon portfolio, où chaque projet est une vitrine de ma passion et de mon savoir-faire. </p>
-        <a class="links" href="src/views/projects.html" title="Voir tous mes projets">Mes projets</a>
-    </div>
-    <img src="" alt="Photo de moi">
+<main class="projects">
+    <h2>Mes projets</h2>
+    <ul>
+        <li>
+            <a href="singleProject.html">
+                <img src="/src/img/desktopCV.png" alt="Photo de mon projet CV">
+            </a>
+        </li>
+    </ul>
 </main>
+
 <footer>
     <section>
         <h2 class="sr-only">Footer</h2>
@@ -61,13 +69,13 @@
                             <a href="/">Accueil</a>
                         </li>
                         <li>
-                            <a href="src/views/about.html">À propos</a>
+                            <a href="about.html">À propos</a>
                         </li>
                         <li>
-                            <a href="">Projets</a>
+                            <a href="projects.html">Projets</a>
                         </li>
                         <li>
-                            <a href="src/views/contact.html">Contact</a>
+                            <a href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </article>
@@ -88,13 +96,15 @@
                         <a href="https://github.com/Coppens-Anthony" title="Vers mon compte Github">Github</a>
                     </p>
                     <p>
-                        <a href="https://www.linkedin.com/in/anthony-coppens-8ba3832a7/" title="Vers mon compte LinkedIn">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/anthony-coppens-8ba3832a7/"
+                           title="Vers mon compte LinkedIn">LinkedIn</a>
                     </p>
                     <p>
-                        <a href="https://www.instagram.com/anthony_coppens/?hl=fr" title="Vers mon compte Instagram" >Instagram</a>
+                        <a href="https://www.instagram.com/anthony_coppens/?hl=fr" title="Vers mon compte Instagram">Instagram</a>
                     </p>
                     <p>
-                        <a href="https://www.facebook.com/anthony.coppens.04/?locale=fr_FR" title="Vers mon compte Facebook">Facebook</a>
+                        <a href="https://www.facebook.com/anthony.coppens.04/?locale=fr_FR"
+                           title="Vers mon compte Facebook">Facebook</a>
                     </p>
 
                 </article>

@@ -22,6 +22,17 @@ body {
   font-size: 0.8rem;
   width: 40%;
   text-align: center;
+  transition: 0.5s;
+  &:hover{
+    background-color: #C0A062;
+    color: black;
+    transition: 0.5s;
+  }
+
+  @media (min-width: $breakpoint-m) {
+    padding: 1rem 0.2%;
+    font-size: 1rem;
+  }
 }
 h1, h2, h3, h4{
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -54,7 +65,12 @@ a {
   width: 1px !important;
   white-space: nowrap !important; /* 3 */
 }
-
+img{
+  object-fit: contain;
+}
 abbr {
   text-decoration: none;
+}
+.second-color{
+  color: #C0A062;
 }

@@ -68,6 +68,18 @@ body {
   font-size: 0.8rem;
   width: 40%;
   text-align: center;
+  transition: 0.5s;
+}
+.links:hover {
+  background-color: #C0A062;
+  color: black;
+  transition: 0.5s;
+}
+@media (min-width: 768px) {
+  .links {
+    padding: 1rem 0.2%;
+    font-size: 1rem;
+  }
 }
 
 h1, h2, h3, h4 {
@@ -107,15 +119,84 @@ a {
   white-space: nowrap !important; /* 3 */
 }
 
+img {
+  object-fit: contain;
+}
+
 abbr {
   text-decoration: none;
+}
+
+.second-color {
+  color: #C0A062;
+}
+
+.rectangle:after {
+  content: "";
+  position: absolute;
+  background-color: #2b2a2a;
+  width: 10%;
+  height: 100%;
+  rotate: -15deg;
+  z-index: -1;
+  top: -5.5rem;
+}
+@media (min-width: 768px) {
+  .rectangle:after {
+    rotate: -20deg;
+  }
+}
+
+.home .rectangle:after {
+  left: 48%;
+}
+@media (min-width: 768px) {
+  .home .rectangle:after {
+    left: 51.2%;
+  }
+}
+
+.about .rectangle:after {
+  left: 107%;
+}
+@media (min-width: 768px) {
+  .about .rectangle:after {
+    left: 70%;
+  }
+}
+
+.projects .rectangle:after {
+  left: 64%;
+}
+@media (min-width: 768px) {
+  .projects .rectangle:after {
+    left: 71.8%;
+  }
+}
+
+.singleProject .rectangle:after {
+  left: 89%;
+}
+@media (min-width: 768px) {
+  .singleProject .rectangle:after {
+    left: 61.2%;
+  }
+}
+
+.contact .rectangle:after {
+  left: 70%;
+}
+@media (min-width: 768px) {
+  .contact .rectangle:after {
+    left: 58%;
+  }
 }
 
 .main-nav {
   display: flex;
   justify-content: space-between;
   width: 80%;
-  margin: 2rem auto 5rem;
+  margin: 2rem auto 0;
 }
 .main-nav a {
   z-index: 999;
@@ -189,7 +270,13 @@ abbr {
 .home {
   width: 80%;
   text-align: center;
-  margin: auto;
+  overflow: hidden;
+  margin: 5rem auto auto;
+}
+@media (min-width: 768px) {
+  .home {
+    margin: 8rem auto auto;
+  }
 }
 .home div {
   margin-bottom: 2rem;
@@ -202,16 +289,25 @@ abbr {
   font-size: 1rem;
   margin-bottom: 1rem;
 }
+@media (min-width: 768px) {
+  .home div h3 {
+    margin: 2rem auto;
+  }
+}
 .home div p {
   font-size: 0.8rem;
   margin-bottom: 1rem;
 }
-@media (min-width: 768px) and (max-width: 1200px) {
-  .home {
-    display: flex;
+@media (min-width: 768px) {
+  .home div p {
+    margin: 2rem auto;
   }
 }
-@media (min-width: 1200px) {
+.home div a {
+  width: 30%;
+  padding: 0.7rem 2%;
+}
+@media (min-width: 768px) {
   .home {
     display: flex;
   }
@@ -219,7 +315,12 @@ abbr {
 
 .about {
   width: 80%;
-  margin: auto;
+  margin: 5rem auto auto;
+}
+@media (min-width: 768px) {
+  .about {
+    margin: 8rem auto auto;
+  }
 }
 .about .introduction {
   display: flex;
@@ -243,9 +344,6 @@ abbr {
   .about .introduction p {
     width: 60%;
   }
-}
-.about .introduction p .second-color {
-  color: #C0A062;
 }
 .about .information .scolarity {
   background-color: #838383;
@@ -280,7 +378,6 @@ abbr {
 .about .information .scolarity article p {
   margin-top: 1rem;
   padding-bottom: 1rem;
-  color: #C0A062;
 }
 .about .competencies {
   background-color: #555454;
@@ -319,7 +416,12 @@ abbr {
 
 .contact {
   width: 80%;
-  margin: auto;
+  margin: 5rem auto auto;
+}
+@media (min-width: 768px) {
+  .contact {
+    margin: 8rem auto auto;
+  }
 }
 @media (min-width: 768px) {
   .contact div {
@@ -385,52 +487,205 @@ abbr {
   padding: 0.5rem 10%;
   margin-top: 2rem;
   cursor: pointer;
+  transition: 0.5s;
+}
+.contact button:hover {
+  background-color: white;
+  color: black;
+  transition: 0.5s;
 }
 
 .projects {
   width: 80%;
-  margin: auto;
+  margin: 5rem auto auto;
 }
-.projects img {
-  width: 60%;
+@media (min-width: 768px) {
+  .projects {
+    margin: 8rem auto auto;
+  }
+}
+@media (min-width: 768px) {
+  .projects section {
+    margin-top: 10rem;
+  }
+}
+@media (min-width: 768px) {
+  .projects ul {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-column-gap: 10%;
+  }
+  .projects ul li:nth-child(2n) {
+    margin-top: 15rem;
+  }
+  .projects ul li:nth-child(2n+1) {
+    margin-top: -5rem;
+  }
+}
+.projects ul li {
+  transition: transform 0.7s;
+}
+@media (min-width: 768px) {
+  .projects ul li:hover {
+    transform: scale(1.05);
+  }
+  .projects ul li:hover .desktop-projects-color {
+    display: block;
+  }
+  .projects ul li:hover .desktop-projects {
+    display: none;
+  }
+}
+.projects ul li article {
+  text-align: center;
+  position: relative;
+  margin-top: 5rem;
+}
+@media (min-width: 768px) {
+  .projects ul li article {
+    margin: 0;
+  }
+}
+.projects ul li article h4 {
+  color: #C0A062;
+  margin-bottom: 1rem;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .projects ul li article h4 {
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+}
+.projects ul li article .mobile-projects {
+  width: 80%;
   height: 0%;
+}
+@media (min-width: 768px) {
+  .projects ul li article .mobile-projects {
+    display: none;
+  }
+}
+.projects ul li article .desktop-projects {
+  display: none;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .projects ul li article .desktop-projects {
+    display: block;
+  }
+}
+.projects ul li article .desktop-projects-color {
+  display: none;
+  width: 100%;
 }
 
 .singleProject {
   width: 80%;
-  margin: auto;
+  margin: 5rem auto auto;
+}
+@media (min-width: 768px) {
+  .singleProject {
+    margin: 8rem auto auto;
+  }
+}
+.singleProject h4 {
+  font-size: 1rem;
+}
+.singleProject p {
+  font-size: 0.8rem;
+  margin: 2rem auto;
+  line-height: 1.2rem;
 }
 .singleProject .description {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
-.singleProject .description p {
-  font-size: 0.8rem;
-  margin: 1rem auto;
+@media (min-width: 768px) {
+  .singleProject .description {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 768px) {
+  .singleProject .description .written-description {
+    width: 50%;
+  }
 }
 .singleProject .description .officials-links {
   display: flex;
-  margin-top: 1rem;
+  margin-top: 2rem;
   text-align: center;
 }
-.singleProject .description img {
-  width: 48.5%;
-  height: 0%;
+@media (min-width: 768px) {
+  .singleProject .description .officials-links {
+    margin: 0;
+  }
 }
 .singleProject .description #portfolio-img {
   width: 100%;
   height: 0%;
-  margin: 1rem auto 0.5rem;
+  margin: 2rem auto 0.5rem;
 }
-.singleProject .description .desktop-img {
-  display: flex;
-  justify-content: space-between;
+@media (min-width: 768px) {
+  .singleProject .description #portfolio-img {
+    height: 12rem;
+    width: 39%;
+    margin: 0;
+  }
 }
 .singleProject .fonctionnalities {
-  margin-bottom: 2rem;
+  margin-top: 10rem;
 }
-.singleProject .fonctionnalities p {
-  font-size: 0.8rem;
-  margin: 1rem auto;
+@media (min-width: 768px) {
+  .singleProject .fonctionnalities {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 768px) {
+  .singleProject .fonctionnalities .written-fonctionnalities {
+    width: 50%;
+  }
+}
+.singleProject .fonctionnalities img {
+  width: 100%;
+  height: 20rem;
+  margin-right: 2.2%;
+}
+@media (min-width: 768px) {
+  .singleProject .fonctionnalities img {
+    width: 22%;
+    height: 22%;
+  }
+}
+.singleProject .mini-img {
+  display: none;
+}
+@media (min-width: 768px) {
+  .singleProject .mini-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 23%;
+  }
+  .singleProject .mini-img img {
+    width: 100%;
+    height: 11rem;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .singleProject .mini-img img {
+    width: 120%;
+    height: 10.5rem;
+  }
+}
+.singleProject .projects-link {
+  margin: 4rem auto 4rem;
+}
+@media (min-width: 768px) {
+  .singleProject .projects-link {
+    width: 20%;
+  }
 }
 
 footer {
@@ -477,6 +732,9 @@ footer section article li, footer section article p {
 }
 footer section .socials {
   margin: 0;
+}
+footer a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=main.css.map */

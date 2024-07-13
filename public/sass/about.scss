@@ -1,9 +1,11 @@
 @import "size";
 
-
 .about {
   width: 80%;
-  margin: auto;
+  margin: 5rem auto auto;
+  @media (min-width: $breakpoint-m) {
+    margin: 8rem auto auto;
+  }
 
   .introduction {
     display: flex;
@@ -26,20 +28,17 @@
       @media (min-width: $breakpoint-m) {
         width: 60%;
       }
-
-      .second-color {
-        color: #C0A062;
-      }
     }
   }
 
-  .information, {
+  .information {
     .scolarity {
       background-color: #838383;
       width: 80%;
       margin: auto;
       border-radius: 20px;
       line-height: 1.5rem;
+
       @media (min-width: $breakpoint-m) {
         width: 50%;
       }
@@ -68,7 +67,6 @@
         p {
           margin-top: 1rem;
           padding-bottom: 1rem;
-          color: #C0A062;
         }
       }
     }
@@ -79,6 +77,7 @@
     width: 80%;
     margin: auto;
     border-radius: 20px;
+
     @media (min-width: $breakpoint-m) {
       width: 50%;
     }
@@ -95,14 +94,16 @@
       margin: auto;
       padding: 1rem 0 1rem;
 
-      h5{
+      h5 {
         font-size: 1rem;
         font-weight: 600;
         margin-bottom: 1rem;
       }
+
       ul {
         font-style: italic;
         margin: auto;
+
         li {
           margin-bottom: 0.5rem;
         }

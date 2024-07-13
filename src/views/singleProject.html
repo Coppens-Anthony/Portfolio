@@ -7,11 +7,11 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="/public/css/main.css">
-    <title>Portfolio</title>
+    <title>Portfolio - Projet Portfolio</title>
 </head>
 <body>
 <header class="header">
-    <h1 class="sr-only">À propos</h1>
+    <h1 class="sr-only">Portfolio</h1>
     <nav class="main-nav">
         <h2 class="sr-only">
             Navigation principale
@@ -27,7 +27,7 @@
 
             <ul class="menu__box">
                 <li><a class="menu__item" href="/" title="Vers la page d'Accueil">Accueil</a></li>
-                <li><a class=" menu__item menu__item" href="" title="Vers la page à propos">À propos</a>
+                <li><a class=" menu__item menu__item" href="about.html" title="Vers la page à propos">À propos</a>
                 </li>
                 <li><a class="current_page menu__item menu__item" href="projects.html"
                        title="Vers mes projets ">Projets</a></li>
@@ -36,7 +36,7 @@
             </ul>
             <ul class="desktop-nav">
                 <li><a class="menu__item" href="/" title="Vers la page d'Accueil">Accueil</a></li>
-                <li><a class="menu__item menu__item" href="" title="Vers la page à propos">À propos</a>
+                <li><a class="menu__item menu__item" href="about.html" title="Vers la page à propos">À propos</a>
                 </li>
                 <li><a class="current_page menu__item menu__item" href="projects.html"
                        title="Vers mes projets ">Projets</a></li>
@@ -51,33 +51,41 @@
     <section class="project-description">
         <h3 class="sr-only">Informations sur le projet</h3>
         <article class="description">
-            <h4>Description</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cumque, delectus dolores explicabo id
-                ipsum iure minus nobis optio, quisquam quo ratione, reiciendis sequi unde ut veniam voluptatibus!
-                Delectus, illum.</p>
-            <div class="officials-links">
-                <a class="links" href="">visiter le site</a>
-                <a class="links" href="">Voir le Github</a>
+            <div class="written-description">
+                <h4>Description</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cumque, delectus
+                    dolores explicabo id
+                    ipsum iure minus nobis optio, quisquam quo ratione, reiciendis sequi unde ut veniam voluptatibus!
+                    Delectus, illum.</p>
+                <div class="officials-links">
+                    <a class="links" href="" title="Se rendre sur le site">Visiter le site</a>
+                    <a class="links" href="" title="Se rendre sur le Github du site">Voir le Github</a>
+                </div>
             </div>
             <img id="portfolio-img" src="/src/img/desktopPortfolio.png" alt="Image du site">
-            <div class="desktop-img">
-                <img src="/src/img/desktopCV.png" alt="Image du site">
-                <img src="/src/img/desktopClient.png" alt="Image du site">
-            </div>
         </article>
         <article class="fonctionnalities">
+            <div class="written-fonctionnalities">
             <h4>Fonctionnalités</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cumque, delectus dolores explicabo id
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cumque, delectus
+                dolores explicabo id
                 ipsum iure minus nobis optio, quisquam quo ratione, reiciendis sequi unde ut veniam voluptatibus!
-                Delectus, illum.</p>
-            <div class="mobile-img">
-                <img src="" alt="Image du site">
-                    <img src="" alt="Image du site">
-                    <img src="" alt="Image du site">
-                </div>
+                Delectus, illum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consectetur culpa
+                delectus dignissimos dolorum ducimus error et exercitationem expedita facere facilis in itaque maiores
+                molestiae, non quasi, quod ratione temporibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ab aliquid consequatur culpa deleniti dolorum et excepturi ipsam iure labore minima nisi non omnis,
+                quidem reiciendis sapiente, sit veritatis voluptate voluptatum? Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit.</p>
+            </div>
+            <div class="mini-img">
+                <img src="/src/img/mobileCV.png" alt="Image du site">
+                <img src="/src/img/mobileCV.png" alt="Image du site">
+            </div>
+            <img src="/src/img/mobileCV.png" alt="Image du site">
         </article>
-        <a class="links" href="projects.html">Retour aux projets</a>
+        <a class="links projects-link" href="projects.html" title="Retournez vers tous mes projets">Retour aux projets</a>
     </section>
+    <div class="rectangle"></div>
 </main>
 <footer>
     <section>
@@ -88,16 +96,16 @@
                     <h3>Navigation</h3>
                     <ul>
                         <li>
-                            <a href="/">Accueil</a>
+                            <a href="/" title="Vers la page d'accueil">Accueil</a>
                         </li>
                         <li>
-                            <a href="about.html">À propos</a>
+                            <a href="about.html" title="Vers la page à propos">À propos</a>
                         </li>
                         <li>
-                            <a href="projects.html">Projets</a>
+                            <a href="projects.html" title="Vers mes projets">Projets</a>
                         </li>
                         <li>
-                            <a href="contact.html">Contact</a>
+                            <a href="contact.html" title="Vers la page de contact">Contact</a>
                         </li>
                     </ul>
                 </article>
@@ -118,17 +126,14 @@
                         <a href="https://github.com/Coppens-Anthony" title="Vers mon compte Github">Github</a>
                     </p>
                     <p>
-                        <a href="https://www.linkedin.com/in/anthony-coppens-8ba3832a7/"
-                           title="Vers mon compte LinkedIn">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/anthony-coppens-8ba3832a7/" title="Vers mon compte LinkedIn">LinkedIn</a>
                     </p>
                     <p>
-                        <a href="https://www.instagram.com/anthony_coppens/?hl=fr" title="Vers mon compte Instagram">Instagram</a>
+                        <a href="https://www.instagram.com/anthony_coppens/?hl=fr" title="Vers mon compte Instagram" >Instagram</a>
                     </p>
                     <p>
-                        <a href="https://www.facebook.com/anthony.coppens.04/?locale=fr_FR"
-                           title="Vers mon compte Facebook">Facebook</a>
+                        <a href="https://www.facebook.com/anthony.coppens.04/?locale=fr_FR" title="Vers mon compte Facebook">Facebook</a>
                     </p>
-
                 </article>
             </li>
         </ul>

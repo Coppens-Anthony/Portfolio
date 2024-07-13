@@ -1,6 +1,9 @@
 .contact {
   width: 80%;
-  margin: auto;
+  margin: 5rem auto auto;
+  @media (min-width: $breakpoint-m) {
+    margin: 8rem auto auto;
+  }
 
   div {
     @media (min-width: $breakpoint-m) {
@@ -70,5 +73,11 @@
     padding: 0.5rem 10%;
     margin-top: 2rem;
     cursor: pointer;
+    transition: 0.5s;
+    &:hover{
+      background-color: white;
+      color: black;
+      transition: 0.5s;
+    }
   }
 }

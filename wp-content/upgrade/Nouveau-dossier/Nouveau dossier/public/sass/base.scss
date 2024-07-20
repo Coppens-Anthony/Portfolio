@@ -1,0 +1,76 @@
+@import "size";
+
+html {
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+body {
+  font-family: Raleway, Arial, Helvetica, Tahoma, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+}
+.links{
+  color: #C0A062;
+  padding: 0.5rem 2%;
+  border: 1px solid #C0A062;
+  display: block;
+  margin: auto;
+  font-size: 0.8rem;
+  width: 40%;
+  text-align: center;
+  transition: 0.5s;
+  &:hover{
+    background-color: #C0A062;
+    color: black;
+    transition: 0.5s;
+  }
+
+  @media (min-width: $breakpoint-m) {
+    padding: 1rem 0.2%;
+    font-size: 1rem;
+  }
+}
+h1, h2, h3, h4{
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+h2{
+  font-size: 1.2rem;
+  margin-bottom: 4rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.current_page{
+  color: #C0A062;
+  font-weight: 700;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important; /* 2 */
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important; /* 3 */
+}
+img{
+  object-fit: contain;
+}
+abbr {
+  text-decoration: none;
+}
+.second-color{
+  color: #C0A062;
+}

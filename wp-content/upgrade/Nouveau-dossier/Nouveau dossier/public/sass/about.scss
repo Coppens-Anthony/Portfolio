@@ -1,0 +1,124 @@
+@import "size";
+
+.about {
+  width: 80%;
+  margin: 5rem auto auto;
+  @media (min-width: $breakpoint-m) {
+    margin: 8rem auto auto;
+  }
+
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+
+    @media (min-width: $breakpoint-m) {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10rem;
+    }
+
+    img {
+      margin-bottom: 2rem;
+    }
+
+    p {
+      line-height: 1.5rem;
+
+      @media (min-width: $breakpoint-m) {
+        width: 60%;
+      }
+    }
+  }
+
+  .information {
+    .scolarity {
+      background-color: #838383;
+      width: 80%;
+      margin: auto;
+      border-radius: 20px;
+      line-height: 1.5rem;
+
+      @media (min-width: $breakpoint-m) {
+        width: 50%;
+      }
+
+      h4 {
+        font-size: 1.2rem;
+        padding-top: 1rem;
+        margin: auto auto 2rem;
+        width: 80%;
+      }
+
+      article {
+        width: 80%;
+        margin: 1rem auto 2rem;
+
+        h5 {
+          font-size: 1rem;
+          font-weight: 600;
+        }
+
+        i {
+          font-style: italic;
+          margin-top: 0.5rem;
+        }
+
+        p {
+          margin-top: 1rem;
+          padding-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  .competencies {
+    background-color: #555454;
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+
+    @media (min-width: $breakpoint-m) {
+      width: 50%;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+      padding-top: 1rem;
+      margin: auto auto 2rem;
+      width: 80%;
+    }
+
+    article {
+      width: 80%;
+      margin: auto;
+      padding: 1rem 0 1rem;
+
+      h5 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        font-style: italic;
+        margin: auto;
+
+        li {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+
+  #me {
+    width: 60%;
+    border-radius: 15px;
+    margin: auto auto 2rem;
+    @media (min-width: $breakpoint-m) {
+      width: 20%;
+      margin-left: 22%;
+    }
+  }
+}

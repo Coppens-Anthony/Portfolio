@@ -1,0 +1,55 @@
+@import "size";
+
+.home {
+  width: 80%;
+  text-align: center;
+  overflow: hidden;
+  margin: 5rem auto auto;
+  @media (min-width: $breakpoint-m) {
+    margin: 8rem auto auto;
+  }
+
+  div {
+    margin-bottom: 2rem;
+
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      @media (min-width: $breakpoint-m) {
+        margin: 2rem auto;
+      }
+    }
+
+    p {
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+      @media (min-width: $breakpoint-m) {
+        margin: 2rem auto;
+      }
+    }
+
+    a {
+      width: 30%;
+      padding: 0.7rem 2%;
+    }
+  }
+
+  @media (min-width: $breakpoint-m) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+#me{
+  width: 60%;
+  border-radius: 15px;
+  @media (min-width: $breakpoint-m) {
+    width: 20%;
+    margin-left: 22%;
+  }
+}

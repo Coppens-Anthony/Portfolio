@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125.63 205.95">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 3px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #bfa061;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        fill: #bfa061;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g>
+      <rect class="cls-3" x="18.79" y="46.46" width="88.05" height="151.34" rx="13.76" ry="13.76" transform="translate(-32.98 23.71) rotate(-17.01)"/>
+      <circle class="cls-2" cx="81.29" cy="182.54" r="7.5"/>
+      <g>
+        <circle class="cls-4" cx="54.96" cy="55.59" r="3.5"/>
+        <rect class="cls-4" x="28.37" y="60.14" width="17.43" height="1.83" transform="translate(-16.24 13.52) rotate(-17.01)"/>
+      </g>
+    </g>
+    <polyline class="cls-1" points="61.57 12.82 70.14 9.25 77.65 16.68 83.93 15.49 93.6 28.91 105.42 25.47"/>
+    <polyline class="cls-1" points="57.8 22.85 66.37 19.29 73.88 26.71 80.15 25.53 89.83 38.94 101.64 35.5"/>
+    <polyline class="cls-1" points="62.93 5.33 71.51 1.77 79.01 9.19 85.29 8.01 94.96 21.42 106.78 17.98"/>
+  </g>
+</svg>

@@ -4,29 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="380c168e-4dfb-42dc-8445-76a51d0ec1f8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/public/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/public/css/main.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/public/sass/.vite/deps_temp_8f422f70/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/public/sass/about.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/public/sass/base.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/public/sass/contact.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/public/sass/footer.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/public/sass/header.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/public/sass/home.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/public/sass/main.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/public/sass/projects.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/public/sass/rectangle.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/public/sass/reset.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/public/sass/singleProject.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/public/sass/size.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/screenshot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2024/07/Nouveau-dossier.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2024/07/public-1.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2024/07/public.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2024/07/screenshot.zip" beforeDir="false" />
+    <list default="true" id="380c168e-4dfb-42dc-8445-76a51d0ec1f8" name="Changes" comment="DB + injections + wp pages and last HTML&amp;CSS's modifications">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +25,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectColorInfo">{
@@ -56,6 +39,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/ZZ BACKDOOR/Desktop/Portfolio-Projet&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -133,6 +117,8 @@
       <workItem from="1722780625565" duration="4087000" />
       <workItem from="1722850868193" duration="791000" />
       <workItem from="1722863226660" duration="5142000" />
+      <workItem from="1722945960550" duration="4043000" />
+      <workItem from="1722950060350" duration="349000" />
     </task>
     <servers />
   </component>

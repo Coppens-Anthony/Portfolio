@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="380c168e-4dfb-42dc-8445-76a51d0ec1f8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/public/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/public/css/main.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/public/sass/.vite/deps_temp_8f422f70/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/public/sass/about.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/public/sass/base.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/public/sass/contact.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/public/sass/footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/public/sass/header.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/public/sass/home.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/public/sass/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/public/sass/projects.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/public/sass/rectangle.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/public/sass/reset.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/public/sass/singleProject.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/public/sass/size.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier/Nouveau dossier/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2024/07/Nouveau-dossier.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2024/07/public-1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2024/07/public.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2024/07/screenshot.zip" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2ijnMFu0f0TeOgXWdXQKw5ws7Uj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ZZ BACKDOOR/Desktop/Portfolio-Projet&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ZZ BACKDOOR\Desktop\Portfolio-Projet" />
+      <recent name="C:\Users\ZZ BACKDOOR\Desktop\Portfolio-Projet\src\views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ZZ BACKDOOR\Desktop\Portfolio-Projet\wp-content\themes\portfolio" />
+      <recent name="C:\Users\ZZ BACKDOOR\Desktop\Portfolio-Projet\src\views" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-PS-241.14494.237" />
+        <option value="bundled-php-predefined-ba97393d7c68-8f0632a2a215-com.jetbrains.php.sharedIndexes-PS-241.14494.237" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="380c168e-4dfb-42dc-8445-76a51d0ec1f8" name="Changes" comment="" />
+      <created>1720012803601</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1720012803601</updated>
+      <workItem from="1720012804788" duration="606000" />
+      <workItem from="1720013731654" duration="930000" />
+      <workItem from="1720078712624" duration="5795000" />
+      <workItem from="1720084591555" duration="41000" />
+      <workItem from="1720181169846" duration="5606000" />
+      <workItem from="1720217150644" duration="1900000" />
+      <workItem from="1720238956165" duration="6199000" />
+      <workItem from="1720389652670" duration="1267000" />
+      <workItem from="1720448178023" duration="1630000" />
+      <workItem from="1720476199842" duration="2077000" />
+      <workItem from="1720510348138" duration="1865000" />
+      <workItem from="1720539702137" duration="5752000" />
+      <workItem from="1720622403929" duration="3771000" />
+      <workItem from="1720646910067" duration="1947000" />
+      <workItem from="1720733345957" duration="2979000" />
+      <workItem from="1720860509796" duration="6041000" />
+      <workItem from="1720876147960" duration="2861000" />
+      <workItem from="1720879263703" duration="321000" />
+      <workItem from="1720971362383" duration="500000" />
+      <workItem from="1721123607486" duration="3231000" />
+      <workItem from="1721132824816" duration="1425000" />
+      <workItem from="1721394528979" duration="523000" />
+      <workItem from="1721395697334" duration="334000" />
+      <workItem from="1721396877595" duration="558000" />
+      <workItem from="1721479871651" duration="1232000" />
+      <workItem from="1721481126438" duration="4839000" />
+      <workItem from="1721490459842" duration="149000" />
+      <workItem from="1721567027515" duration="1299000" />
+      <workItem from="1721637766076" duration="391000" />
+      <workItem from="1721650480533" duration="954000" />
+      <workItem from="1721651454747" duration="881000" />
+      <workItem from="1721918460430" duration="13000" />
+      <workItem from="1722765658097" duration="177000" />
+      <workItem from="1722780625565" duration="4087000" />
+      <workItem from="1722850868193" duration="791000" />
+      <workItem from="1722863226660" duration="5142000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

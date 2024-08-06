@@ -1,0 +1,62 @@
+.rectangle:after{
+  content: "";
+  position: absolute;
+  background-color: #2B2A2AFF;
+  width: 10%;
+  height: 100%;
+  rotate: -15deg;
+  z-index: -1;
+  top: -5.5rem;
+
+  @media (min-width: $breakpoint-m) {
+    rotate: -20deg;
+  }
+
+}
+
+.home{
+  .rectangle:after {
+    left: 59%;
+
+    @media (min-width: $breakpoint-m) {
+      left: 54.2%;
+    }
+  }
+}
+
+.about{
+  .rectangle:after {
+    left: 117%;
+
+    @media (min-width: $breakpoint-m) {
+      left: 74%;
+    }
+  }
+}
+.projects{
+  .rectangle:after {
+    left: 64%;
+
+    @media (min-width: $breakpoint-m) {
+      left: 71.8%;
+    }
+  }
+}
+.singleProject{
+  .rectangle:after {
+    left: 84%;
+
+    @media (min-width: $breakpoint-m) {
+      left: 61.2%;
+    }
+  }
+}
+.contact{
+  .rectangle:after {
+    left: 72%;
+
+    @media (min-width: $breakpoint-m) {
+      left: 58%;
+    }
+  }
+}

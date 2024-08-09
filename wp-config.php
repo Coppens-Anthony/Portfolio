@@ -25,6 +25,12 @@ define('DB_USER', 'root');
 define('DB_PASSWORD', '');
 define('DB_HOST', 'localhost');
 
+
+/*define('DB_NAME', 'ez3ynh_portfolio');
+define('DB_USER', 'ez3ynh_anthony');
+define('DB_PASSWORD', 'Neymarhazard10');
+define('DB_HOST', 'ez3ynh.myd.infomaniak.com'); */
+
 /**#@+
  * Authentication unique keys and salts.
  *
@@ -69,6 +75,7 @@ $table_prefix = 'wp_';
  */
 define( 'WP_DEBUG', false );
 
+
 /* Add any custom values between this line and the "stop editing" line. */
 
 
@@ -82,3 +89,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+

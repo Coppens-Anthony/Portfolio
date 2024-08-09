@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="380c168e-4dfb-42dc-8445-76a51d0ec1f8" name="Changes" comment="DB + injections + wp pages and last HTML&amp;CSS's modifications">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="380c168e-4dfb-42dc-8445-76a51d0ec1f8" name="Changes" comment=".">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fd3b2c46-218b-497f-bc5f-8aaf0eea0ccc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fd3b2c46-218b-497f-bc5f-8aaf0eea0ccc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-config.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/portfolio/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/portfolio/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/portfolio/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/portfolio/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/portfolio/template-projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/portfolio/template-projects.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/portfolio/template-singleProject.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/portfolio/template-singleProject.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier-1/Nouveau dossier/functions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier-1/Nouveau dossier/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier-1/Nouveau dossier/screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier-1/Nouveau dossier/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,11 +125,26 @@
       <workItem from="1722850868193" duration="791000" />
       <workItem from="1722863226660" duration="5142000" />
       <workItem from="1722945960550" duration="4043000" />
-      <workItem from="1722950060350" duration="349000" />
+      <workItem from="1722950060350" duration="3703000" />
+      <workItem from="1723033740789" duration="8118000" />
+      <workItem from="1723119240460" duration="2529000" />
     </task>
+    <task id="LOCAL-00001" summary=".">
+      <option name="closed" value="true" />
+      <created>1722950580259</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1722950580259</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>

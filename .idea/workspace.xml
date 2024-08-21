@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="380c168e-4dfb-42dc-8445-76a51d0ec1f8" name="Changes" comment="Worpress implementation articles">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/portfolio/Database.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/portfolio/config.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/portfolio/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/portfolio/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/portfolio/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/portfolio/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/portfolio/template-projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/portfolio/template-projects.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/portfolio/template-singleProject.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/portfolio/single.php" afterDir="false" />
-    </list>
+    <list default="true" id="380c168e-4dfb-42dc-8445-76a51d0ec1f8" name="Changes" comment="Lasts changes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,7 +119,7 @@
       <workItem from="1723208544735" duration="134000" />
       <workItem from="1724186917469" duration="325000" />
       <workItem from="1724189068916" duration="1125000" />
-      <workItem from="1724252168563" duration="2646000" />
+      <workItem from="1724252168563" duration="2958000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <option name="closed" value="true" />
@@ -145,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723208669108</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Lasts changes">
+      <option name="closed" value="true" />
+      <created>1724255145372</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1724255145372</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +154,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="." />
     <MESSAGE value="Worpress implementation articles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Worpress implementation articles" />
+    <MESSAGE value="Lasts changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lasts changes" />
   </component>
 </project>

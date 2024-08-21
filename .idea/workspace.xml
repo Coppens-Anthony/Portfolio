@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="380c168e-4dfb-42dc-8445-76a51d0ec1f8" name="Changes" comment="Lasts changes" />
+    <list default="true" id="380c168e-4dfb-42dc-8445-76a51d0ec1f8" name="Changes" comment="." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -119,7 +119,7 @@
       <workItem from="1723208544735" duration="134000" />
       <workItem from="1724186917469" duration="325000" />
       <workItem from="1724189068916" duration="1125000" />
-      <workItem from="1724252168563" duration="2958000" />
+      <workItem from="1724252168563" duration="3255000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <option name="closed" value="true" />
@@ -145,16 +145,24 @@
       <option name="project" value="LOCAL" />
       <updated>1724255145372</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=".">
+      <option name="closed" value="true" />
+      <created>1724255353985</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1724255353985</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="." />
     <MESSAGE value="Worpress implementation articles" />
     <MESSAGE value="Lasts changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lasts changes" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>

@@ -30,20 +30,20 @@
 
             <ul class="menu__box">
                 <li><a href="/" class="<?= urlIs('/') ? 'current_page' : '' ?>" title="Vers la page d&apos;Accueil">Accueil</a></li>
-                <li><a href="/A-propos/" class="<?= urlIs('/A-propos/') ? 'current_page' : '' ?>" title="Vers la page &agrave; propos">&Agrave; propos</a>
+                <li><a href="/a-propos/" class="<?= urlIs('/a-propos/') ? 'current_page' : '' ?>" title="Vers la page &agrave; propos">&Agrave; propos</a>
                 </li>
-                <li><a href="/Projets/" class="<?= urlIs('/Projets/') ? 'current_page' : '' ?>"
+                <li><a href="/projets/" class="<?= urlIs('/projets/') ? 'current_page' : '' ?>"
                        title="Vers mes projets ">Projets</a></li>
-                <li class="contact-nav"><a href="/Contact/" class="<?= urlIs('/Contact/') ? 'current_page' : '' ?>" title="Vers la page de Contact">Contact</a>
+                <li class="contact-nav"><a href="/contact/" class="<?= urlIs('/contact/') ? 'current_page' : '' ?>" title="Vers la page de Contact">Contact</a>
                 </li>
             </ul>
             <ul class="desktop-nav">
                 <li><a href="/" class="<?= urlIs('/') ? 'current_page' : '' ?>" title="Vers la page d&apos;Accueil">Accueil</a></li>
-                <li><a href="/A-propos/" class="<?= urlIs('/A-propos/') ? 'current_page' : '' ?>" title="Vers la page &agrave; propos">&Agrave; propos</a>
+                <li><a href="/a-propos/" class="<?= urlIs('/a-propos/') ? 'current_page' : '' ?>" title="Vers la page &agrave; propos">&Agrave; propos</a>
                 </li>
-                <li><a href="/Projets/" class="<?= urlIs('/Projets/') ? 'current_page' : '' ?>"
+                <li><a href="/projets/" class="<?= urlIs('/projets/') ? 'current_page' : '' ?>"
                        title="Vers mes projets ">Projets</a></li>
-                <li class="contact-nav"><a href="/Contact/" class="<?= urlIs('/Contact/') ? 'current_page' : '' ?>" title="Vers la page de Contact">Contact</a>
+                <li class="contact-nav"><a href="/contact/" class="<?= urlIs('/contact/') ? 'current_page' : '' ?>" title="Vers la page de Contact">Contact</a>
                 </li>
             </ul>
         </div>

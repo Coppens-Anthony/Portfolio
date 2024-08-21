@@ -10,13 +10,13 @@
                             <a href="/" title="Vers la page d&apos;accueil">Accueil</a>
                         </li>
                         <li>
-                            <a href="/A-propos" title="Vers la page &agrave; propos">&Agrave; propos</a>
+                            <a href="/a-propos" title="Vers la page &agrave; propos">&Agrave; propos</a>
                         </li>
                         <li>
-                            <a href="/Projets" title="Vers mes projets">Projets</a>
+                            <a href="/projets" title="Vers mes projets">Projets</a>
                         </li>
                         <li>
-                            <a href="/Contact" title="Vers la page de contact">Contact</a>
+                            <a href="/contact" title="Vers la page de contact">Contact</a>
                         </li>
                     </ul>
                 </article>

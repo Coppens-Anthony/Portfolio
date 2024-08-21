@@ -1,9 +1,7 @@
 <?php
-/*
-Template Name: Single Project Page
-*/
 
-$title = the_title();
+
+$title = get_the_title();
 
 include 'header.php';
 

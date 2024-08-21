@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="380c168e-4dfb-42dc-8445-76a51d0ec1f8" name="Changes" comment=".">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fd3b2c46-218b-497f-bc5f-8aaf0eea0ccc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fd3b2c46-218b-497f-bc5f-8aaf0eea0ccc.xml" afterDir="false" />
+    <list default="true" id="380c168e-4dfb-42dc-8445-76a51d0ec1f8" name="Changes" comment="Worpress implementation articles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-config.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/portfolio/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/portfolio/Database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/portfolio/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/portfolio/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/portfolio/Database.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/portfolio/config.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/portfolio/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/portfolio/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/portfolio/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/portfolio/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/portfolio/template-projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/portfolio/template-projects.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/portfolio/template-singleProject.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/portfolio/template-singleProject.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier-1/Nouveau dossier/functions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier-1/Nouveau dossier/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier-1/Nouveau dossier/screenshot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/upgrade/Nouveau-dossier-1/Nouveau dossier/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/portfolio/template-singleProject.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/portfolio/single.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,6 +124,10 @@
       <workItem from="1722950060350" duration="3703000" />
       <workItem from="1723033740789" duration="8118000" />
       <workItem from="1723119240460" duration="2529000" />
+      <workItem from="1723208544735" duration="134000" />
+      <workItem from="1724186917469" duration="325000" />
+      <workItem from="1724189068916" duration="1125000" />
+      <workItem from="1724252168563" duration="2646000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <option name="closed" value="true" />
@@ -137,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722950580259</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Worpress implementation articles">
+      <option name="closed" value="true" />
+      <created>1723208669108</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1723208669108</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +153,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="Worpress implementation articles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Worpress implementation articles" />
   </component>
 </project>

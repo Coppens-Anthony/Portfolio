@@ -14,12 +14,12 @@ include 'header.php';
         <h3 class="sr-only">Tous mes projets</h3>
         <ul>
             <?php
-            // Query pour récupérer les projets
+
             $args = array(
-                'post_type' => 'post', // Utilisation des articles pour les projets
-                'posts_per_page' => -1, // Récupérer tous les projets
-                'orderby' => 'date', // Trier par date
-                'order' => 'ASC' // Du plus ancien au plus récent
+                'post_type' => 'post',
+                'posts_per_page' => -1,
+                'orderby' => 'date',
+                'order' => 'ASC'
             );
 
             $projects = new WP_Query($args);

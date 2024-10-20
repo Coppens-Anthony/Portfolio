@@ -3,7 +3,7 @@
         <h2 class="sr-only">Footer</h2>
         <ul class="footer-list">
             <li>
-                <article>
+                <nav class="footer_nav">
                     <h3>Navigation</h3>
                     <ul>
                         <li>
@@ -19,19 +19,19 @@
                             <a href="/contact" title="Vers la page de contact">Contact</a>
                         </li>
                     </ul>
-                </article>
+                </nav>
             </li>
             <li>
-                <article class="coords" itemscope itemtype="https://schema.org/Person">
+                <section class="coords" itemscope itemtype="https://schema.org/Person">
                     <h3>Coordonn&eacute;es</h3>
                     <p itemprop="email">anthonycoppens04@gmail.com</p>
                     <p itemprop="telephone">0477.81.06.47</p>
                     <p itemprop="address">Rue Henri Collin 21,</p>
                     <p itemprop="address">1350, Orp-Le-Grand</p>
-                </article>
+                </section>
             </li>
             <li>
-                <article class="socials">
+                <section class="socials">
                     <h3>Mes r&eacute;seaux</h3>
                     <p>
                         <a href="https://github.com/Coppens-Anthony" title="Vers mon compte Github">Github</a>
@@ -45,7 +45,7 @@
                     <p>
                         <a href="https://www.facebook.com/anthony.coppens.04/?locale=fr_FR" title="Vers mon compte Facebook">Facebook</a>
                     </p>
-                </article>
+                </section>
             </li>
         </ul>
     </section>

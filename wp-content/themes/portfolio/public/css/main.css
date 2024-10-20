@@ -143,7 +143,7 @@ abbr {
 }
 
 .home .rectangle:after {
-  left: 59%;
+  left: 55.9%;
 }
 @media (min-width: 768px) {
   .home .rectangle:after {
@@ -152,7 +152,7 @@ abbr {
 }
 
 .about .rectangle:after {
-  left: 117%;
+  left: 105.8%;
 }
 @media (min-width: 768px) {
   .about .rectangle:after {
@@ -179,11 +179,11 @@ abbr {
 }
 
 .contact .rectangle:after {
-  left: 72%;
+  left: 70%;
 }
 @media (min-width: 768px) {
   .contact .rectangle:after {
-    left: 58%;
+    left: 58.8%;
   }
 }
 
@@ -341,116 +341,6 @@ abbr {
   }
 }
 
-.about {
-  width: 80%;
-  margin: 5rem auto auto;
-}
-@media (min-width: 768px) {
-  .about {
-    margin: 8rem auto auto;
-  }
-}
-.about .introduction {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 3rem;
-}
-@media (min-width: 768px) {
-  .about .introduction {
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10rem;
-  }
-}
-.about .introduction img {
-  border-radius: 15px;
-  margin: auto auto 2rem;
-  width: 60%;
-}
-@media (min-width: 768px) {
-  .about .introduction img {
-    width: 22%;
-    margin: 0;
-  }
-}
-.about .introduction p {
-  line-height: 1.5rem;
-}
-@media (min-width: 768px) {
-  .about .introduction p {
-    width: 60%;
-  }
-}
-.about .information .scolarity {
-  background-color: #838383;
-  width: 80%;
-  margin: auto;
-  border-radius: 20px;
-  line-height: 1.5rem;
-}
-@media (min-width: 768px) {
-  .about .information .scolarity {
-    width: 50%;
-  }
-}
-.about .information .scolarity h4 {
-  font-size: 1.2rem;
-  padding-top: 1rem;
-  margin: auto auto 2rem;
-  width: 80%;
-}
-.about .information .scolarity article {
-  width: 80%;
-  margin: 1rem auto 2rem;
-}
-.about .information .scolarity article h5 {
-  font-size: 1rem;
-  font-weight: 600;
-}
-.about .information .scolarity article i {
-  font-style: italic;
-  margin-top: 0.5rem;
-}
-.about .information .scolarity article p {
-  margin-top: 1rem;
-  padding-bottom: 1rem;
-}
-.about .competencies {
-  background-color: #555454;
-  width: 80%;
-  margin: auto;
-  border-radius: 20px;
-}
-@media (min-width: 768px) {
-  .about .competencies {
-    width: 50%;
-  }
-}
-.about .competencies h4 {
-  font-size: 1.2rem;
-  padding-top: 1rem;
-  margin: auto auto 2rem;
-  width: 80%;
-}
-.about .competencies article {
-  width: 80%;
-  margin: auto;
-  padding: 1rem 0 1rem;
-}
-.about .competencies article h5 {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-.about .competencies article ul {
-  font-style: italic;
-  margin: auto;
-}
-.about .competencies article ul li {
-  margin-bottom: 0.5rem;
-}
-
 .contact {
   width: 80%;
   margin: 5rem auto auto;
@@ -510,22 +400,32 @@ abbr {
   flex-direction: column;
   text-align: left;
 }
+.contact .contact-form div label {
+  margin-top: 0.5rem;
+}
 .contact .contact-form div input, .contact .contact-form div textarea {
   background-color: transparent;
-  border: transparent;
-  border-bottom: 1px solid white;
+  border: 1px solid white;
   color: white;
-  margin: 0.5rem 0 1rem;
+  margin: 1rem 0;
+  padding: 0.5rem;
 }
 @media (min-width: 768px) {
   .contact .contact-form div input, .contact .contact-form div textarea {
-    margin: 1rem 0 2rem;
+    margin: 1rem 0;
   }
 }
 .contact .contact-form div textarea {
   height: 10rem;
   border: 1px solid white;
   padding: 0.5rem 0 0 2%;
+}
+.contact .contact-form div .error {
+  color: #f43c3c;
+  font-size: 0.7rem;
+  display: block;
+  text-align: left;
+  margin-top: 0.3rem;
 }
 .contact button {
   background-color: transparent;
@@ -541,89 +441,18 @@ abbr {
   color: black;
   transition: 0.5s;
 }
-
-.projects {
-  width: 80%;
-  margin: 5rem auto auto;
-}
-@media (min-width: 768px) {
-  .projects {
-    margin: 8rem auto auto;
-  }
-}
-@media (min-width: 768px) {
-  .projects section {
-    margin-top: 10rem;
-  }
-}
-@media (min-width: 768px) {
-  .projects ul {
-    display: grid;
-    grid-template-columns: 45% 45%;
-    grid-column-gap: 10%;
-  }
-  .projects ul li:nth-child(2n) {
-    margin-top: 15rem;
-  }
-  .projects ul li:nth-child(2n+1) {
-    margin-top: -5rem;
-  }
-}
-.projects ul li {
-  transition: transform 0.7s;
-}
-@media (min-width: 768px) {
-  .projects ul li:hover {
-    transform: scale(1.05);
-  }
-  .projects ul li:hover .desktop-projects-color {
-    display: block;
-  }
-  .projects ul li:hover .desktop-projects {
-    display: none;
-  }
-}
-.projects ul li article {
+.contact .success-message {
+  color: #35d535;
+  font-size: 0.7rem;
+  margin: 0 auto 3rem;
+  display: block;
+  width: 77%;
   text-align: center;
-  position: relative;
-  margin-top: 5rem;
 }
 @media (min-width: 768px) {
-  .projects ul li article {
-    margin: 0;
+  .contact .success-message {
+    font-size: 0.8rem;
   }
-}
-.projects ul li article h4 {
-  color: #C0A062;
-  margin-bottom: 1rem;
-  z-index: 1;
-}
-@media (min-width: 768px) {
-  .projects ul li article h4 {
-    font-weight: 700;
-  }
-}
-.projects ul li article .mobile-projects {
-  width: 80%;
-  height: 0%;
-}
-@media (min-width: 768px) {
-  .projects ul li article .mobile-projects {
-    display: none;
-  }
-}
-.projects ul li article .desktop-projects {
-  display: none;
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .projects ul li article .desktop-projects {
-    display: block;
-  }
-}
-.projects ul li article .desktop-projects-color {
-  display: none;
-  width: 100%;
 }
 
 .singleProject {
@@ -734,6 +563,200 @@ abbr {
   }
 }
 
+.projects {
+  width: 80%;
+  margin: 5rem auto auto;
+}
+@media (min-width: 768px) {
+  .projects {
+    margin: 8rem auto auto;
+  }
+}
+@media (min-width: 768px) {
+  .projects section {
+    margin-top: 10rem;
+  }
+}
+@media (min-width: 768px) {
+  .projects ul {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-column-gap: 10%;
+  }
+  .projects ul li:nth-child(2n) {
+    margin-top: 15rem;
+  }
+  .projects ul li:nth-child(2n+1) {
+    margin-top: -5rem;
+  }
+}
+.projects ul li {
+  transition: transform 0.7s;
+}
+@media (min-width: 768px) {
+  .projects ul li:hover {
+    transform: scale(1.05);
+  }
+  .projects ul li .desktop-projects-color {
+    display: none;
+    width: 100%;
+    filter: grayscale(100);
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .projects ul li .desktop-projects-color {
+    display: block;
+  }
+  .projects ul li .desktop-projects-color:hover {
+    filter: grayscale(0);
+  }
+}
+@media (min-width: 768px) {
+  .projects ul li article {
+    text-align: center;
+    position: relative;
+    margin-top: 5rem;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .projects ul li article {
+    margin: 0;
+  }
+}
+@media (min-width: 768px) {
+  .projects ul li article h4 {
+    color: #C0A062;
+    margin-bottom: 1rem;
+    z-index: 1;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .projects ul li article h4 {
+    font-weight: 700;
+  }
+}
+@media (min-width: 768px) {
+  .projects ul li article .mobile-projects {
+    width: 80%;
+    height: 0%;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .projects ul li article .mobile-projects {
+    display: none;
+  }
+}
+
+.about {
+  width: 80%;
+  margin: 5rem auto auto;
+}
+@media (min-width: 768px) {
+  .about {
+    margin: 8rem auto auto;
+  }
+}
+.about .introduction {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+@media (min-width: 768px) {
+  .about .introduction {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10rem;
+  }
+}
+.about .introduction img {
+  border-radius: 15px;
+  margin: auto auto 2rem;
+  width: 60%;
+}
+@media (min-width: 768px) {
+  .about .introduction img {
+    width: 22%;
+    margin: 0;
+  }
+}
+.about .introduction p {
+  line-height: 1.5rem;
+}
+@media (min-width: 768px) {
+  .about .introduction p {
+    width: 60%;
+  }
+}
+.about .information .scolarity {
+  background-color: #838383;
+  width: 80%;
+  margin: auto;
+  border-radius: 20px;
+  line-height: 1.5rem;
+}
+@media (min-width: 768px) {
+  .about .information .scolarity {
+    width: 50%;
+  }
+}
+.about .information .scolarity h4 {
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  margin: auto auto 2rem;
+  width: 80%;
+}
+.about .information .scolarity article {
+  width: 80%;
+  margin: 1rem auto 2rem;
+}
+.about .information .scolarity article h5 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.about .information .scolarity article i {
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+.about .information .scolarity article p {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+.about .competencies {
+  background-color: #555454;
+  width: 80%;
+  margin: auto;
+  border-radius: 20px;
+}
+@media (min-width: 768px) {
+  .about .competencies {
+    width: 50%;
+  }
+}
+.about .competencies h4 {
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  margin: auto auto 2rem;
+  width: 80%;
+}
+.about .competencies article {
+  width: 80%;
+  margin: auto;
+  padding: 1rem 0 1rem;
+}
+.about .competencies article h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.about .competencies article ul {
+  font-style: italic;
+  margin: auto;
+}
+.about .competencies article ul li {
+  margin-bottom: 0.5rem;
+}
+
 footer {
   padding: 2rem 0;
   width: 100%;
@@ -755,26 +778,33 @@ footer section {
     justify-content: space-between;
   }
 }
-footer section article {
+footer section .footer_nav, footer section .coords, footer section .socials {
   margin-bottom: 2rem;
+  width: 100%;
 }
 @media (min-width: 768px) {
-  footer section article {
+  footer section .footer_nav, footer section .coords, footer section .socials {
     margin-bottom: 0;
   }
 }
-footer section article h3 {
+footer section .footer_nav h3, footer section .coords h3, footer section .socials h3 {
   margin-bottom: 1rem;
 }
-footer section article li, footer section article p {
+footer section .footer_nav li, footer section .footer_nav p, footer section .coords li, footer section .coords p, footer section .socials li, footer section .socials p {
   margin: 0 0 0.3rem 5%;
   font-size: 0.8rem;
   line-height: 1rem;
+}
+footer section .coords {
+  margin: 0 0 2rem 0;
 }
 @media (min-width: 768px) {
   footer section .coords {
     text-align: center;
   }
+}
+footer section .coords p {
+  margin-left: 0;
 }
 footer section .socials {
   margin: 0;

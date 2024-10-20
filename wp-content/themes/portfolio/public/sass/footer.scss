@@ -16,8 +16,9 @@ footer{
       }
     }
 
-    article{
+    .footer_nav, .coords, .socials{
       margin-bottom: 2rem;
+      width: 100%;
       @media (min-width: $breakpoint-m) {
         margin-bottom: 0;
       }
@@ -31,8 +32,12 @@ footer{
       }
     }
     .coords{
+      margin: 0 0 2rem 0;
       @media (min-width: $breakpoint-m) {
         text-align: center;
+      }
+      p{
+        margin-left: 0;
       }
     }
     .socials{

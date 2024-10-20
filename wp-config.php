@@ -20,16 +20,11 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'portfolioV2');
+define('DB_NAME', 'portfolio');
 define('DB_USER', 'root');
 define('DB_PASSWORD', '');
 define('DB_HOST', 'localhost');
 
-
-/*define('DB_NAME', 'ez3ynh_portfolio');
-define('DB_USER', 'ez3ynh_anthony');
-define('DB_PASSWORD', 'Neymarhazard10');
-define('DB_HOST', 'ez3ynh.myd.infomaniak.com'); */
 
 /**#@+
  * Authentication unique keys and salts.

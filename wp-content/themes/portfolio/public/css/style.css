@@ -299,12 +299,14 @@ abbr {
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
-.home div h3 {
+.home div .name {
   font-size: 1rem;
   margin-bottom: 1rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 @media (min-width: 768px) {
-  .home div h3 {
+  .home div .name {
+    font-size: 1.2rem;
     margin: 2rem auto;
   }
 }

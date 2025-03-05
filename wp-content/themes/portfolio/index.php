@@ -1,23 +1,13 @@
-<?php
+<?php get_header() ?>
 
-$title = 'Accueil';
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-get_header();
+    <h2><?= get_the_title() ?></h2>
+    <div>
+        <?= get_the_content() ?>
+    </div>
 
-/*
-Template Name: Home Page
-*/
-
-
-?>
-
-    <main class="home" itemscope itemtype="https://schema.org/Person">
-        <div>
-            <h2 itemprop="jobTitle">WEB DEVELOPER</h2>
-            <h3> <span itemprop="givenName">Anthony</span> <span itemprop="familyName">Coppens</span></h3>
-            <p>Bienvenue sur mon portfolio, o&ugrave; chaque projet est une vitrine de ma passion et de mon savoir-faire. </p>
-            <a class="links " href="/projets"  title="Voir tous mes projets">Mes projets</a>
-        </div>
-        <div class="rectangle"></div>
-    </main>
+<?php endwhile; else : ?>
+    <p>la page est vide</p>
+<?php endif; ?>
 <?php get_footer() ?>

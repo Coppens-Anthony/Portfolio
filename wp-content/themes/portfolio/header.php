@@ -9,7 +9,7 @@
     <!--<link rel="stylesheet" href="<?php /*= dw_asset("css/main.css") */ ?>">-->
     <link rel="stylesheet" href="/wp-content/themes/portfolio/public/css/style.css">
     <link rel="icon" href="/wp-content/themes/portfolio/src/svg/logo.svg">
-    <title>Portfolio - <?php echo $title ?? ''; ?></title>
+    <title>Portfolio - <?= get_the_title() ?></title>
 </head>
 <body>
 <header class="header">

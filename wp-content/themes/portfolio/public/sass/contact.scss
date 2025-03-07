@@ -4,6 +4,9 @@
   @media (min-width: $breakpoint-m) {
     margin: 8rem auto auto;
   }
+  h2{
+    font-size: 1.8rem;
+  }
 
   div {
     @media (min-width: $breakpoint-m) {

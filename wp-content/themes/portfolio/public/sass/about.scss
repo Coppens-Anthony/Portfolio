@@ -7,113 +7,67 @@
     margin: 8rem auto auto;
   }
 
-  .introduction {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3rem;
-
-    @media (min-width: $breakpoint-m) {
-      flex-direction: row-reverse;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 10rem;
-    }
-
-    img {
-      border-radius: 15px;
-      margin: auto auto 2rem;
-      width: 60%;
-      @media (min-width: $breakpoint-m) {
-        width: 22%;
-        margin: 0;
-      }
-
-    }
-
-    p {
-      line-height: 1.5rem;
-
-      @media (min-width: $breakpoint-m) {
-        width: 60%;
-      }
-    }
+  h2 {
+    font-size: 1.8rem;
   }
 
-  .information {
-    .scolarity {
-      background-color: #838383;
-      width: 80%;
-      margin: auto;
-      border-radius: 20px;
-      line-height: 1.5rem;
+  .introduction__container {
+    display: flex;
 
-      @media (min-width: $breakpoint-m) {
-        width: 50%;
+    article {
+
+      &:nth-child(2) {
+        margin-bottom: 2rem;
       }
 
       h4 {
+        color: #C0A062;
+        margin-bottom: 1rem;
         font-size: 1.2rem;
-        padding-top: 1rem;
-        margin: auto auto 2rem;
-        width: 80%;
       }
 
-      article {
-        width: 80%;
-        margin: 1rem auto 2rem;
-
-        h5 {
-          font-size: 1rem;
-          font-weight: 600;
-        }
-
-        i {
-          font-style: italic;
-          margin-top: 0.5rem;
-        }
-
-        p {
-          margin-top: 1rem;
-          padding-bottom: 1rem;
-        }
+      p {
+        line-height: 1.5rem;
       }
     }
   }
 
   .competencies {
-    background-color: #555454;
-    width: 80%;
-    margin: auto;
-    border-radius: 20px;
+    margin-top: 4rem;
 
-    @media (min-width: $breakpoint-m) {
-      width: 50%;
-    }
+    .highway-slider {
+      display: flex;
+      overflow: hidden;
+      width: 140%;
+      margin-left: -20%;
 
-    h4 {
-      font-size: 1.2rem;
-      padding-top: 1rem;
-      margin: auto auto 2rem;
-      width: 80%;
-    }
 
-    article {
-      width: 80%;
-      margin: auto;
-      padding: 1rem 0 1rem;
+      .highway-lane {
+        display: flex;
+        width: calc(179px * 16);
+        animation: scroll 10s linear infinite;
+        gap: 7rem;
 
-      h5 {
-        font-size: 1rem;
-        font-weight: 600;
-        margin-bottom: 1rem;
-      }
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(calc(-179px * 8));
+          }
+        }
 
-      ul {
-        font-style: italic;
-        margin: auto;
+        .highway-card {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 4%;
+          flex-shrink: 0;
 
-        li {
-          margin-bottom: 0.5rem;
+          img {
+            width: 100%;
+            height: auto;
+          }
         }
       }
     }

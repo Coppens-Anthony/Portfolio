@@ -34,13 +34,13 @@
 
   .competencies {
     margin-top: 4rem;
-
     .highway-slider {
       display: flex;
       overflow: hidden;
       width: 140%;
       margin-left: -20%;
-
+      background-color: #2B2A2A;
+      padding: 2rem 0;
 
       .highway-lane {
         display: flex;
@@ -67,6 +67,56 @@
           img {
             width: 100%;
             height: auto;
+          }
+        }
+      }
+    }
+  }
+
+  .scholar {
+    margin-top: 4rem;
+
+    div {
+      ol {
+        display: flex;
+        flex-direction: column;
+        li {
+          margin-bottom: 10rem;
+          &:last-child{
+            margin-bottom: 0;
+          }
+          @media (min-width: $breakpoint-l) {
+            width: 50%;
+            &:nth-child(odd) {
+              text-align: end;
+
+              article {
+                margin-right: 20%;
+              }
+            }
+
+            &:nth-child(even) {
+              align-self: flex-end;
+
+              article {
+                margin-left: 20%;
+              }
+            }
+          }
+
+          article {
+            p {
+              color: #C0A062;
+              font-family: Georgia, "Times New Roman", Times, serif;
+              font-size: 2rem;
+              margin-bottom: 1rem;
+            }
+
+            h4 {
+              font-family: Raleway, Arial, Helvetica, Tahoma, sans-serif;
+              font-size: 1.2rem;
+              margin-bottom: 0.5rem;
+            }
           }
         }
       }

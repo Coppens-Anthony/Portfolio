@@ -322,6 +322,7 @@ abbr {
 .home div a {
   width: 30%;
   padding: 0.7rem 2%;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .home img {
   border-radius: 15px;
@@ -405,6 +406,7 @@ abbr {
 }
 .contact .contact-form div label {
   margin-top: 0.5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .contact .contact-form div input, .contact .contact-form div textarea {
   background-color: transparent;
@@ -438,6 +440,7 @@ abbr {
   margin-top: 2rem;
   cursor: pointer;
   transition: 0.5s;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .contact button:hover {
   background-color: white;
@@ -680,6 +683,8 @@ abbr {
   overflow: hidden;
   width: 140%;
   margin-left: -20%;
+  background-color: #2B2A2A;
+  padding: 2rem 0;
 }
 .about .competencies .highway-slider .highway-lane {
   display: flex;
@@ -705,6 +710,47 @@ abbr {
 .about .competencies .highway-slider .highway-lane .highway-card img {
   width: 100%;
   height: auto;
+}
+.about .scholar {
+  margin-top: 4rem;
+}
+.about .scholar div ol {
+  display: flex;
+  flex-direction: column;
+}
+.about .scholar div ol li {
+  margin-bottom: 10rem;
+}
+.about .scholar div ol li:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 1024px) {
+  .about .scholar div ol li {
+    width: 50%;
+  }
+  .about .scholar div ol li:nth-child(odd) {
+    text-align: end;
+  }
+  .about .scholar div ol li:nth-child(odd) article {
+    margin-right: 20%;
+  }
+  .about .scholar div ol li:nth-child(even) {
+    align-self: flex-end;
+  }
+  .about .scholar div ol li:nth-child(even) article {
+    margin-left: 20%;
+  }
+}
+.about .scholar div ol li article p {
+  color: #C0A062;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.about .scholar div ol li article h4 {
+  font-family: Raleway, Arial, Helvetica, Tahoma, sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 
 footer {

@@ -50,6 +50,24 @@ get_header();
                 <?php endif; ?>
             </div>
         </section>
+        <section class="scholar">
+            <h3 class="sr-only">Mon parcours scolaire</h3>
+            <div>
+                <?php if (have_rows('scholar')): ?>
+                    <ol>
+                        <?php while (have_rows('scholar')): the_row(); ?>
+                            <li>
+                                <article>
+                                    <p><?= get_sub_field('starting') ?>-<?= get_sub_field('ending')?></p>
+                                    <h4><?= get_sub_field('title')?></h4>
+                                    <small><?= get_sub_field('description')?></small>
+                                </article>
+                            </li>
+                        <?php endwhile; ?>
+                    </ol>
+                <?php endif; ?>
+            </div>
+        </section>
         <div class="rectangle"></div>
     </main>
 <?php

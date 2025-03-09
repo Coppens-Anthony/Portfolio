@@ -31,3 +31,16 @@ add_action( 'wp_enqueue_scripts', function() {
     // Remove inline global CSS on the front end.
     wp_dequeue_style( 'global-styles' );
 }, 20 );
+
+
+register_post_type('projects', [
+    'label' => 'Projets',
+    'description' => 'Les projets réalisés',
+    'menu_position' => 6,
+    'menu_icon' => 'dashicons-list-view',
+    'public' => true,
+    'rewrite' => [
+        'slug' => 'projets',
+    ],
+    'supports' => ['title','excerpt','editor','thumbnail'],
+]);

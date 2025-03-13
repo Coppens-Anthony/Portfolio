@@ -33,10 +33,11 @@ add_action( 'wp_enqueue_scripts', function() {
 }, 20 );
 
 
-register_post_type('projects', [
+register_post_type('project', [
     'label' => 'Projets',
     'description' => 'Les projets réalisés',
     'menu_position' => 6,
+    'has_archive' => true,
     'menu_icon' => 'dashicons-list-view',
     'public' => true,
     'rewrite' => [

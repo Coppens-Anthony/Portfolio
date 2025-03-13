@@ -1,0 +1,89 @@
+@import "size";
+
+
+.singleProject {
+  width: 80%;
+  margin: 5rem auto auto;
+  @media (min-width: $breakpoint-m) {
+    margin: 8rem auto auto;
+  }
+
+  .general_content {
+    display: flex;
+
+    h3 {
+      color: #C0A062;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    p{
+      font-size: 1rem;
+      line-height: 1.5rem;
+
+    }
+  }
+
+  .description {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+
+    .content_container {
+      p {
+        margin-bottom: 2rem;
+      }
+
+      .links_container {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+          font-family: Georgia, "Times New Roman", Times, serif;
+          font-size: 1rem;
+          color: #C0A062;
+          border: 1px solid #C0A062;
+          padding: 0.5rem 0;
+          width: 40%;
+          text-align: center;
+          transition: 1s;
+
+          &:hover {
+            color: black;
+            background-color: #C0A062;
+            transition: 1s;
+          }
+        }
+      }
+    }
+  }
+  .functionalities{
+    flex-direction: column;
+    margin-bottom: 4rem;
+    p{
+      margin-bottom: 1rem;
+    }
+  }
+  .return_to_projects{
+    color: #C0A062;
+    border: 1px solid #C0A062;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1.2rem;
+    padding: 0.8rem 0;
+    text-align: center;
+    display: block;
+    width: 60%;
+    margin: auto;
+    transition: 1s;
+    @media (min-width: $breakpoint-m){
+      width: 35%;
+    }
+    @media (min-width: $breakpoint-l){
+      width: 25%;
+    }
+    &:hover {
+      color: black;
+      background-color: #C0A062;
+      transition: 1s;
+    }
+  }
+}

@@ -16,7 +16,7 @@ get_header();
             <h3 class="sr-only">Liste de mes projets</h3>
             <?php
             $projects = new WP_Query([
-                'post_type' => 'projects',
+                'post_type' => 'project',
                 'order' => 'DESC',
                 'orderby' => 'date',
             ]);

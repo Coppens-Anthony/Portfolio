@@ -21,8 +21,12 @@
         <section class="coords" itemscope itemtype="https://schema.org/Person">
             <h3>Coordonn&eacute;es</h3>
             <ul>
-                <li itemprop="email">anthonycoppens04@gmail.com</li>
-                <li itemprop="telephone">0477.81.06.47</li>
+                <li itemprop="email">
+                    <a href="mailto:anthonycoppens04@gmail.com" title="Envoyez moi un mail">anthonycoppens04@gmail.com</a>
+                </li>
+                <li itemprop="telephone">
+                    <a href="tel:+32477810647" title="Téléphonez moi" itemprop="telephone">0477.81.06.47</a>
+                </li>
                 <li itemprop="address">Rue Henri Collin 21,</li>
                 <li itemprop="address">1350, Orp-Le-Grand</li>
             </ul>
@@ -52,7 +56,7 @@
         <h2 class="sr-only">Mentions légales</h2>
         <small>© 2025 Anthony Coppens - Tous droits réservés.</small>
         <small>
-            <a href="/" title="Se renseigner sur le smentions légales">Mentions légales</a>
+            <a href="/mentions-legales" title="Se renseigner sur le smentions légales">Mentions légales</a>
         </small>
     </article>
 </footer>

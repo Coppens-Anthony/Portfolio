@@ -60,3 +60,13 @@
     }
   }
 }
+
+.legacies{
+  .rectangle:after {
+    left: 70%;
+
+    @media (min-width: $breakpoint-m) {
+      left: 75%;
+    }
+  }
+}

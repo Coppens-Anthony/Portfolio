@@ -4,18 +4,13 @@
         <nav class="footer_nav">
             <h3>Navigation <span class="hidden">secondaire</span></h3>
             <ul>
-                <li>
-                    <a href="/" title="Vers la page d&apos;accueil">Accueil</a>
-                </li>
-                <li>
-                    <a href="/a-propos" title="Vers la page &agrave; propos">&Agrave; propos</a>
-                </li>
-                <li>
-                    <a href="/projets" title="Vers mes projets">Projets</a>
-                </li>
-                <li>
-                    <a href="/contact" title="Vers la page de contact">Contact</a>
-                </li>
+                <?php foreach (dw_get_navigation_links('footer') as $link): ?>
+                    <li>
+                        <a href="<?= $link->href; ?>" title="Vers la page <?= $link->label ?>">
+                            <?= $link->label; ?>
+                        </a>
+                    </li>
+                <?php endforeach; ?>
             </ul>
         </nav>
         <section class="coords" itemscope itemtype="https://schema.org/Person">

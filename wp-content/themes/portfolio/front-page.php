@@ -30,7 +30,6 @@ Template Name: Home Page
                 <?= get_field('to_projects') ?>
             </a>
         </div>
-        <img src="/wp-content/themes/portfolio/src/img/me.jpeg" alt="Photo de moi" id="me">
         <div class="rectangle"></div>
     </main>
 <?php get_footer() ?>

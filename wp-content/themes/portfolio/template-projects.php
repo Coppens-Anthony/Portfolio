@@ -26,7 +26,9 @@ get_header();
                     <a href="<?= get_the_permalink(); ?>" title="Consulter le projet">
                         <span class="sr-only">Découvrir le projet "<?= get_the_title(); ?>"</span>
                     </a>
-                    <!--<img src="" alt="">-->
+                    <div class="img_container">
+                        <?= wp_get_attachment_image(get_field('cover_img'), 'medium'); ?>
+                    </div>
                     <section>
                         <h4>
                             <?= get_field('title') ?>

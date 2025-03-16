@@ -3,7 +3,7 @@
 <?php if (have_posts()): while (have_posts()): the_post(); ?>
     <main class="singleProject">
         <h2>
-            <?= get_the_title() ?>
+            <?= get_field('title') ?>
         </h2>
         <section class="general_content description">
             <div class="content_container">

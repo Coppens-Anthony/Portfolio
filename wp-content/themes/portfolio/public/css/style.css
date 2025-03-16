@@ -567,11 +567,14 @@ abbr {
   cursor: pointer;
   position: relative;
   background-color: #2B2A2A;
+  border: 1px solid black;
   border-radius: 8px;
   transition: 1s;
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
 }
 @media (min-width: 1024px) {
   .projects .projects__container article {
@@ -594,13 +597,27 @@ abbr {
   height: 100%;
   z-index: 1;
 }
+.projects .projects__container article .img_container {
+  width: 88%;
+  margin-top: 2rem;
+}
+@media (min-width: 1024px) {
+  .projects .projects__container article .img_container {
+    width: 48%;
+    margin-top: 0;
+  }
+}
+.projects .projects__container article .img_container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
 .projects .projects__container article section {
   width: 88%;
-  margin: auto;
 }
 @media (min-width: 1024px) {
   .projects .projects__container article section {
-    width: 100%;
+    width: 48%;
   }
 }
 .projects .projects__container article section h4 {

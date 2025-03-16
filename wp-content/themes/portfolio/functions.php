@@ -32,6 +32,7 @@ add_action( 'wp_enqueue_scripts', function() {
     wp_dequeue_style( 'global-styles' );
 }, 20 );
 
+add_theme_support('post-thumbnails', ['project']);
 
 register_post_type('project', [
     'label' => 'Projets',
@@ -45,6 +46,7 @@ register_post_type('project', [
     ],
     'supports' => ['title','excerpt','editor','thumbnail'],
 ]);
+
 
 register_nav_menu('header', 'Le menu de navigation principal en haut de la page');
 register_nav_menu('footer', 'Le menu de navigation de fin de page');

@@ -28,25 +28,6 @@
             <h2 class="sr-only">
                 Navigation principale
             </h2>
-            <!--
-            <ul>
-                <li>
-                    <a href="/" class="<?php /*= urlIs('/') ? 'current_page' : '' */ ?>"
-                       title="Vers la page d&apos;Accueil">Accueil</a>
-                </li>
-                <li>
-                    <a href="/a-propos/" class="<?php /*= urlIs('/a-propos/') ? 'current_page' : '' */ ?>"
-                       title="Vers la page &agrave; propos">&Agrave; propos</a>
-                </li>
-                <li>
-                    <a href="/projets/" class="<?php /*= urlIs('/projets/') ? 'current_page' : '' */ ?>"
-                       title="Vers mes projets ">Projets</a></li>
-                <li class="contact-nav">
-                    <a href="/contact/" class="<?php /*= urlIs('/contact/') ? 'current_page' : '' */ ?>"
-                       title="Vers la page de Contact">Contact</a>
-                </li>
-            </ul>
--->
             <ul>
                 <?php foreach (dw_get_navigation_links('header') as $link):
                     $is_active = ($_SERVER['REQUEST_URI'] == parse_url($link->href, PHP_URL_PATH)) ? 'current_page' : ''; ?>

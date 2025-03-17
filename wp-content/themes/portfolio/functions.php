@@ -32,6 +32,12 @@ add_action( 'wp_enqueue_scripts', function() {
     wp_dequeue_style( 'global-styles' );
 }, 20 );
 
+function allow_svg_upload($mimes) {
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+}
+add_filter('upload_mimes', 'allow_svg_upload');
+
 add_theme_support('post-thumbnails', ['project']);
 
 register_post_type('project', [
@@ -47,6 +53,7 @@ register_post_type('project', [
     'supports' => ['title','excerpt','editor','thumbnail'],
 ]);
 
+add_image_size('desc', 450, 450);
 
 register_nav_menu('header', 'Le menu de navigation principal en haut de la page');
 register_nav_menu('footer', 'Le menu de navigation de fin de page');

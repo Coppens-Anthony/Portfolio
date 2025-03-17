@@ -20,16 +20,23 @@
                     </a>
                 </div>
             </div>
-            <!--IMAGE-->
+            <div class="img_container">
+                <?= wp_get_attachment_image(get_field('description_img'), 'desc'); ?>
+            </div>
         </section>
         <section class="general_content functionalities">
-            <h3>
-                <?= get_field('second_description_title') ?>
-            </h3>
-            <!--IMAGE-->
-            <?= get_field('second_text') ?>
+            <div class="img_container">
+                <?= wp_get_attachment_image(get_field('full_img'), 'medium_large'); ?>
+            </div>
+            <div class="functionalities_container">
+                <h3>
+                    <?= get_field('second_description_title') ?>
+                </h3>
+                <?= get_field('second_text') ?>
+            </div>
         </section>
-        <a href="<?= get_post_type_archive_link('project') ?>" title="Retourner à la page des projets" class="return_to_projects">Retour aux projets</a>
+        <a href="<?= get_post_type_archive_link('project') ?>" title="Retourner à la page des projets"
+           class="return_to_projects">Retour aux projets</a>
     </main>
 
 <?php endwhile; else: ?>

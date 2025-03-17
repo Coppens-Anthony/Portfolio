@@ -11,12 +11,25 @@
   .general_content {
     display: flex;
 
+    .img_container {
+      width: 100%;
+      @media (min-width: $breakpoint-m) {
+        width: 50%;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
     h3 {
       color: #C0A062;
       font-size: 1.2rem;
       margin-bottom: 1rem;
     }
-    p{
+
+    p {
       font-size: 1rem;
       line-height: 1.5rem;
 
@@ -26,9 +39,17 @@
   .description {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 4rem;
+    margin-bottom: 10rem;
+    @media (min-width: $breakpoint-m) {
+      flex-direction: row;
+      gap: 5rem;
+    }
 
     .content_container {
+      width: 100%;
+      @media (min-width: $breakpoint-m) {
+        width: 50%;
+      }
       p {
         margin-bottom: 2rem;
       }
@@ -56,14 +77,34 @@
       }
     }
   }
-  .functionalities{
-    flex-direction: column;
+
+  .functionalities {
+    flex-direction: column-reverse;
     margin-bottom: 4rem;
-    p{
-      margin-bottom: 1rem;
+    @media (min-width: $breakpoint-m) {
+      flex-direction: row;
+      gap: 5rem;
+      align-items: flex-start;
+    }
+
+    .functionalities_container {
+      width: 100%;
+      @media (min-width: $breakpoint-m) {
+        width: 50%;
+        position: sticky;
+        top: 3rem;
+      }
+
+      p {
+        margin-bottom: 1rem;
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
     }
   }
-  .return_to_projects{
+
+  .return_to_projects {
     color: #C0A062;
     border: 1px solid #C0A062;
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -74,12 +115,13 @@
     width: 60%;
     margin: auto;
     transition: 1s;
-    @media (min-width: $breakpoint-m){
+    @media (min-width: $breakpoint-m) {
       width: 35%;
     }
-    @media (min-width: $breakpoint-l){
+    @media (min-width: $breakpoint-l) {
       width: 25%;
     }
+
     &:hover {
       color: black;
       background-color: #C0A062;

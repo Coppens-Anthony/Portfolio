@@ -11,7 +11,7 @@ Template Name: Home Page
 ?>
 
     <main class="home" itemscope itemtype="https://schema.org/Person">
-        <div>
+        <section>
             <h2 itemprop="jobTitle">
                 <?= get_field('job') ?>
             </h2>
@@ -29,6 +29,9 @@ Template Name: Home Page
             <a class="links " href="/projets"  title="Voir tous mes projets">
                 <?= get_field('to_projects') ?>
             </a>
+        </section>
+        <div class="img__container">
+            <?= wp_get_attachment_image(get_field('me_img'), 'medium'); ?>
         </div>
         <div class="rectangle"></div>
     </main>

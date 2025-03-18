@@ -13,27 +13,49 @@
 
   .introduction__container {
     display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    @media (min-width: $breakpoint-m) {
+      flex-direction: row;
+    }
 
-    article {
-
-      &:nth-child(2) {
-        margin-bottom: 2rem;
+    section {
+      @media (min-width: $breakpoint-m) {
+        width: 50%;
       }
+      article {
+        &:nth-child(2) {
+          margin-bottom: 2rem;
+        }
 
-      h4 {
-        color: #C0A062;
-        margin-bottom: 1rem;
-        font-size: 1.2rem;
+        h4 {
+          color: #C0A062;
+          margin-bottom: 1rem;
+          font-size: 1.2rem;
+        }
+
+        p {
+          line-height: 1.5rem;
+        }
       }
-
-      p {
-        line-height: 1.5rem;
+    }
+    .img__container{
+      @media (min-width: $breakpoint-m) {
+        width: 35%;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
       }
     }
   }
 
   .competencies {
     margin-top: 4rem;
+
     .highway-slider {
       display: flex;
       overflow: hidden;
@@ -80,11 +102,14 @@
       ol {
         display: flex;
         flex-direction: column;
+
         li {
           margin-bottom: 10rem;
-          &:last-child{
+
+          &:last-child {
             margin-bottom: 0;
           }
+
           @media (min-width: $breakpoint-l) {
             width: 50%;
             &:nth-child(odd) {

@@ -32,7 +32,9 @@ get_header();
                     </p>
                 </article>
             </section>
-            <!--IMAGE-->
+            <div class="img__container">
+                <?= wp_get_attachment_image(get_field('me_img'), 'medium'); ?>
+            </div>
         </div>
         <section class="competencies">
             <h3 class="sr-only">

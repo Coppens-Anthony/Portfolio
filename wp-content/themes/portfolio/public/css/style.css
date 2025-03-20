@@ -75,7 +75,7 @@ body {
   color: black;
   transition: 0.5s;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .links {
     padding: 1rem 0.2%;
     font-size: 1rem;
@@ -131,9 +131,19 @@ abbr {
   width: 80%;
   margin: 5rem auto auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .section {
     margin: 8rem auto auto;
+  }
+}
+@media (min-width: 1800px) {
+  .section {
+    width: 50%;
+  }
+}
+@media (min-width: 1900px) {
+  .section {
+    width: 40%;
   }
 }
 .section h2 {
@@ -150,7 +160,7 @@ abbr {
   z-index: -1;
   top: -5.5rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .rectangle:after {
     rotate: -20deg;
   }
@@ -159,7 +169,7 @@ abbr {
 .home .rectangle:after {
   left: 55.9%;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .home .rectangle:after {
     left: 54.2%;
   }
@@ -168,7 +178,7 @@ abbr {
 .about .rectangle:after {
   left: 105.8%;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .about .rectangle:after {
     left: 74%;
   }
@@ -177,7 +187,7 @@ abbr {
 .projects .rectangle:after {
   left: 64%;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .projects .rectangle:after {
     left: 71.8%;
   }
@@ -186,7 +196,7 @@ abbr {
 .singleProject .rectangle:after {
   left: 84%;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .singleProject .rectangle:after {
     left: 61.2%;
   }
@@ -195,7 +205,7 @@ abbr {
 .contact .rectangle:after {
   left: 70%;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .contact .rectangle:after {
     left: 58.8%;
   }
@@ -204,7 +214,7 @@ abbr {
 .legacies .rectangle:after {
   left: 70%;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .legacies .rectangle:after {
     left: 75%;
   }
@@ -216,6 +226,16 @@ abbr {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (min-width: 1800px) {
+  .main-nav {
+    width: 50%;
+  }
+}
+@media (min-width: 1900px) {
+  .main-nav {
+    width: 40%;
+  }
 }
 .main-nav a {
   z-index: 999;
@@ -273,7 +293,7 @@ abbr {
   right: 0;
   display: block;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .main-nav input, .main-nav label {
     visibility: hidden;
     position: absolute;
@@ -285,7 +305,7 @@ abbr {
     background-color: transparent;
     position: static;
     padding: 0;
-    width: 50%;
+    width: 70%;
   }
   .main-nav nav ul {
     display: flex;
@@ -299,6 +319,11 @@ abbr {
     border-bottom: none;
   }
 }
+@media (min-width: 920px) {
+  .main-nav nav {
+    width: 50%;
+  }
+}
 
 .current_page {
   color: #C0A062;
@@ -310,17 +335,27 @@ abbr {
   overflow: hidden;
   margin: 5rem auto auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .home {
     margin: 8rem auto auto;
     display: flex;
     align-items: center;
   }
 }
+@media (min-width: 1800px) {
+  .home {
+    width: 50%;
+  }
+}
+@media (min-width: 1900px) {
+  .home {
+    width: 40%;
+  }
+}
 .home section {
   margin-bottom: 4rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .home section {
     width: 50%;
     margin-bottom: 0;
@@ -336,7 +371,7 @@ abbr {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #C0A062;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .home section .name {
     margin: 2rem auto;
   }
@@ -346,7 +381,7 @@ abbr {
   margin-bottom: 1rem;
   line-height: 1.5rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .home section p {
     margin: 2rem auto;
   }
@@ -358,12 +393,12 @@ abbr {
   font-family: Georgia, "Times New Roman", Times, serif;
   margin: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .home section a {
-    width: 30%;
+    width: 50%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .home .img__container {
     margin-left: auto;
     width: 35%;
@@ -375,12 +410,12 @@ abbr {
   border-radius: 10px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 920px) {
   .contact div {
     display: flex;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 920px) {
   .contact div .contact-information {
     width: 40%;
     margin-right: 20%;
@@ -395,7 +430,7 @@ abbr {
 .contact div .contact-information div img {
   margin-right: 10%;
 }
-@media (min-width: 768px) {
+@media (min-width: 920px) {
   .contact div .contact-information div img {
     margin-right: 5%;
   }
@@ -414,7 +449,7 @@ abbr {
   text-align: center;
   margin-top: 5rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 920px) {
   .contact .contact-form {
     width: 40%;
     margin-top: 0;
@@ -439,7 +474,7 @@ abbr {
   padding: 0.6rem;
   border-radius: 4px;
 }
-@media (min-width: 768px) {
+@media (min-width: 920px) {
   .contact .contact-form div input, .contact .contact-form div textarea {
     margin: 1rem 0;
   }
@@ -481,7 +516,7 @@ abbr {
   width: 77%;
   text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 920px) {
   .contact .success-message {
     font-size: 0.8rem;
   }
@@ -494,7 +529,7 @@ abbr {
   width: 100%;
   margin-top: 2rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 920px) {
   .singleProject .general_content .img_container {
     width: 50%;
     margin-top: 0;
@@ -518,7 +553,7 @@ abbr {
   align-items: center;
   margin-bottom: 6rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 920px) {
   .singleProject .description {
     flex-direction: row;
     gap: 5rem;
@@ -527,7 +562,7 @@ abbr {
 .singleProject .description .content_container {
   width: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 920px) {
   .singleProject .description .content_container {
     width: 50%;
   }
@@ -558,7 +593,7 @@ abbr {
   flex-direction: column-reverse;
   margin-bottom: 4rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 920px) {
   .singleProject .functionalities {
     flex-direction: row;
     gap: 5rem;
@@ -568,7 +603,7 @@ abbr {
 .singleProject .functionalities .functionalities_container {
   width: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 920px) {
   .singleProject .functionalities .functionalities_container {
     width: 50%;
     position: sticky;
@@ -593,12 +628,12 @@ abbr {
   margin: auto;
   transition: 1s;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .singleProject .return_to_projects {
     width: 35%;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 920px) {
   .singleProject .return_to_projects {
     width: 25%;
   }
@@ -623,13 +658,13 @@ abbr {
   justify-content: space-between;
   align-items: center;
 }
-@media (min-width: 1024px) {
+@media (min-width: 920px) {
   .projects .projects__container article {
     flex-direction: row;
     padding: 1.2rem 2%;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 920px) {
   .projects .projects__container article:nth-child(even) {
     flex-direction: row-reverse;
   }
@@ -648,7 +683,7 @@ abbr {
   width: 88%;
   margin-top: 2rem;
 }
-@media (min-width: 1024px) {
+@media (min-width: 920px) {
   .projects .projects__container article .img_container {
     width: 48%;
     margin-top: 0;
@@ -662,7 +697,7 @@ abbr {
 .projects .projects__container article section {
   width: 88%;
 }
-@media (min-width: 1024px) {
+@media (min-width: 920px) {
   .projects .projects__container article section {
     width: 48%;
   }
@@ -689,7 +724,7 @@ abbr {
   font-size: 0.8rem;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-@media (min-width: 1024px) {
+@media (min-width: 920px) {
   .projects .projects__container article section ul li {
     padding: 0.5rem 2%;
   }
@@ -709,12 +744,12 @@ abbr {
   align-items: center;
   gap: 2rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 920px) {
   .about .introduction__container {
     flex-direction: row;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 920px) {
   .about .introduction__container section {
     width: 50%;
   }
@@ -731,7 +766,7 @@ abbr {
   font-size: 1.2rem;
   line-height: 1.5rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 920px) {
   .about .introduction__container .img__container {
     width: 35%;
   }
@@ -788,11 +823,12 @@ abbr {
 }
 .about .scholar div ol li {
   margin-bottom: 10rem;
+  text-align: center;
 }
 .about .scholar div ol li:last-child {
   margin-bottom: 0;
 }
-@media (min-width: 1024px) {
+@media (min-width: 920px) {
   .about .scholar div ol li {
     width: 50%;
   }
@@ -829,7 +865,7 @@ abbr {
   width: 80%;
   margin: 5rem auto auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .legacies {
     margin: 8rem auto auto;
   }
@@ -857,16 +893,27 @@ footer {
   margin-top: 3rem;
   background-color: #2B2A2A;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   footer {
     margin-top: 6rem;
+  }
+}
+@media (min-width: 1800px) {
+  footer {
+    width: 50%;
+    margin: 3rem auto auto;
+  }
+}
+@media (min-width: 1900px) {
+  footer {
+    width: 40%;
   }
 }
 footer .footer-list {
   width: 80%;
   margin: auto;
 }
-@media (min-width: 1024px) {
+@media (min-width: 800px) {
   footer .footer-list {
     display: flex;
     justify-content: space-between;
@@ -877,7 +924,7 @@ footer .footer_nav, footer .coords, footer .socials {
   margin-bottom: 2rem;
   width: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   footer .footer_nav, footer .coords, footer .socials {
     margin-bottom: 0;
     width: 33%;
@@ -887,7 +934,7 @@ footer .footer_nav h3, footer .coords h3, footer .socials h3 {
   margin-bottom: 1rem;
   font-size: 1.2rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   footer .footer_nav h3, footer .coords h3, footer .socials h3 {
     font-size: 1.2rem;
     margin-bottom: 1.2rem;
@@ -901,12 +948,12 @@ footer .footer_nav li, footer .coords li, footer .socials li {
   font-size: 1rem;
   line-height: 1rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   footer .footer_nav li, footer .coords li, footer .socials li {
     margin-bottom: 1rem;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   footer .coords {
     text-align: center;
   }
@@ -917,7 +964,7 @@ footer .coords p {
 footer .socials {
   margin: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   footer .socials {
     text-align: end;
   }
@@ -938,7 +985,7 @@ footer .legal {
   flex-direction: column;
   gap: 1rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   footer .legal {
     flex-direction: row;
     justify-content: space-between;

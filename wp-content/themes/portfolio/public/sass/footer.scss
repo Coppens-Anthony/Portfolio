@@ -8,11 +8,18 @@ footer {
   @media (min-width: $breakpoint-m) {
     margin-top: 6rem;
   }
+  @media (min-width: $breakpoint-xxl) {
+    width: 50%;
+    margin: 3rem auto auto;
+  }
+  @media (min-width: $breakpoint-xxxl) {
+    width: 40%;
+  }
 
   .footer-list {
     width: 80%;
     margin: auto;
-    @media (min-width: $breakpoint-l) {
+    @media (min-width: $breakpoint-m) {
       display: flex;
       justify-content: space-between;
       margin-bottom: 2rem;

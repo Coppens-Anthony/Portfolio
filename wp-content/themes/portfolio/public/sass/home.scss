@@ -9,6 +9,12 @@
     display: flex;
     align-items: center;
   }
+  @media (min-width: $breakpoint-xxl) {
+    width: 50%;
+  }
+  @media (min-width: $breakpoint-xxxl) {
+    width: 40%;
+  }
 
   section {
     margin-bottom: 4rem;
@@ -46,7 +52,7 @@
       font-family: Georgia, "Times New Roman", Times, serif;
       margin: 0;
       @media (min-width: $breakpoint-m) {
-        width: 30%;
+        width: 50%;
       }
     }
   }

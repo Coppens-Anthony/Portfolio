@@ -77,6 +77,13 @@ abbr {
   @media (min-width: $breakpoint-m) {
     margin: 8rem auto auto;
   }
+  @media (min-width: $breakpoint-xxl) {
+    width: 50%;
+  }
+  @media (min-width: $breakpoint-xxxl) {
+    width: 40%;
+  }
+
   h2{
     margin-bottom: 5rem;
   }

@@ -7,12 +7,12 @@
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
-    @media (min-width: $breakpoint-m) {
+    @media (min-width: $breakpoint-l) {
       flex-direction: row;
     }
 
     section {
-      @media (min-width: $breakpoint-m) {
+      @media (min-width: $breakpoint-l) {
         width: 50%;
       }
       article {
@@ -33,7 +33,7 @@
       }
     }
     .img__container{
-      @media (min-width: $breakpoint-m) {
+      @media (min-width: $breakpoint-l) {
         width: 35%;
       }
       img{
@@ -96,6 +96,7 @@
 
         li {
           margin-bottom: 10rem;
+          text-align: center;
 
           &:last-child {
             margin-bottom: 0;

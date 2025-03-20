@@ -6,6 +6,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (min-width: $breakpoint-xxl) {
+    width: 50%;
+  }
+  @media (min-width: $breakpoint-xxxl) {
+    width: 40%;
+  }
 
   a {
     z-index: 999;
@@ -84,7 +90,7 @@
       background-color: transparent;
       position: static;
       padding: 0;
-      width: 50%;
+      width: 70%;
 
       ul {
         display: flex;
@@ -98,6 +104,12 @@
           border-bottom: none;
         }
       }
+    }
+  }
+
+  nav {
+    @media (min-width: $breakpoint-l) {
+      width: 50%;
     }
   }
 }

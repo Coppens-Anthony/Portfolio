@@ -1,11 +1,11 @@
 .contact {
   div {
-    @media (min-width: $breakpoint-m) {
+    @media (min-width: $breakpoint-l) {
       display: flex;
     }
 
     .contact-information {
-      @media (min-width: $breakpoint-m) {
+      @media (min-width: $breakpoint-l) {
         width: 40%;
         margin-right: 20%;
       }
@@ -18,7 +18,7 @@
 
         img {
           margin-right: 10%;
-          @media (min-width: $breakpoint-m) {
+          @media (min-width: $breakpoint-l) {
             margin-right: 5%;
           }
         }
@@ -41,7 +41,7 @@
   .contact-form {
     text-align: center;
     margin-top: 5rem;
-    @media (min-width: $breakpoint-m) {
+    @media (min-width: $breakpoint-l) {
       width: 40%;
       margin-top: 0;
     }
@@ -66,7 +66,7 @@
         padding: 0.6rem;
         border-radius: 4px;
 
-        @media (min-width: $breakpoint-m) {
+        @media (min-width: $breakpoint-l) {
           margin: 1rem 0;
         }
       }
@@ -112,7 +112,7 @@
     width: 77%;
     text-align: center;
 
-    @media (min-width: $breakpoint-m) {
+    @media (min-width: $breakpoint-l) {
       font-size: 0.8rem;
     }
   }

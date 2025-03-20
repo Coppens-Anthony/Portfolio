@@ -1,16 +1,6 @@
 @import "size";
 
 .about {
-  width: 80%;
-  margin: 5rem auto auto;
-  @media (min-width: $breakpoint-m) {
-    margin: 8rem auto auto;
-  }
-
-  h2 {
-    font-size: 1.8rem;
-  }
-
   .introduction__container {
     display: flex;
     flex-direction: column-reverse;
@@ -33,10 +23,11 @@
         h4 {
           color: #C0A062;
           margin-bottom: 1rem;
-          font-size: 1.2rem;
+          font-size: 1.5rem;
         }
 
         p {
+          font-size: 1.2rem;
           line-height: 1.5rem;
         }
       }
@@ -54,14 +45,13 @@
   }
 
   .competencies {
-    margin-top: 4rem;
+    margin-top: 6rem;
 
     .highway-slider {
       display: flex;
       overflow: hidden;
       width: 140%;
       margin-left: -20%;
-      background-color: #2B2A2A;
       padding: 2rem 0;
 
       .highway-lane {
@@ -96,9 +86,10 @@
   }
 
   .scholar {
-    margin-top: 4rem;
+    margin-top: 6rem;
 
     div {
+      margin-top: 2rem;
       ol {
         display: flex;
         flex-direction: column;
@@ -146,5 +137,9 @@
         }
       }
     }
+  }
+  h3{
+    font-size: 1.5rem;
+    color: #C0A062;
   }
 }

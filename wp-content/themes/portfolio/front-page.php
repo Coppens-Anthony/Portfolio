@@ -10,7 +10,7 @@ Template Name: Home Page
 
 ?>
 
-    <main class="home" itemscope itemtype="https://schema.org/Person">
+    <main class="home section" itemscope itemtype="https://schema.org/Person">
         <section>
             <h2 itemprop="jobTitle">
                 <?= get_field('job') ?>

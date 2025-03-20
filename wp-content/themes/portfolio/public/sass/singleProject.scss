@@ -2,19 +2,15 @@
 
 
 .singleProject {
-  width: 80%;
-  margin: 5rem auto auto;
-  @media (min-width: $breakpoint-m) {
-    margin: 8rem auto auto;
-  }
-
   .general_content {
     display: flex;
 
     .img_container {
       width: 100%;
+      margin-top: 2rem;
       @media (min-width: $breakpoint-m) {
         width: 50%;
+        margin-top: 0;
       }
 
       img {
@@ -25,12 +21,12 @@
 
     h3 {
       color: #C0A062;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       margin-bottom: 1rem;
     }
 
     p {
-      font-size: 1rem;
+      font-size: 1.2rem;
       line-height: 1.5rem;
 
     }
@@ -39,7 +35,7 @@
   .description {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10rem;
+    margin-bottom: 6rem;
     @media (min-width: $breakpoint-m) {
       flex-direction: row;
       gap: 5rem;
@@ -60,7 +56,7 @@
 
         a {
           font-family: Georgia, "Times New Roman", Times, serif;
-          font-size: 1rem;
+          font-size: 1.2rem;
           color: #C0A062;
           border: 1px solid #C0A062;
           padding: 0.5rem 0;
@@ -92,7 +88,7 @@
       @media (min-width: $breakpoint-m) {
         width: 50%;
         position: sticky;
-        top: 3rem;
+        top: 2rem;
       }
 
       p {

@@ -8,7 +8,7 @@ Template Name: About Page
 get_header();
 
 ?>
-    <main class="about" itemscope itemtype="https://schema.org/Person">
+    <main class="about section" itemscope itemtype="https://schema.org/Person">
         <h2>
             <?= get_field('title') ?>
         </h2>
@@ -37,9 +37,7 @@ get_header();
             </div>
         </div>
         <section class="competencies">
-            <h3 class="sr-only">
-                Mes compétences
-            </h3>
+            <h3>Mes compétences</h3>
             <div class="highway-slider">
                 <?php if (have_rows('competencies_slider')): ?>
                     <ul class="highway-lane">
@@ -53,16 +51,16 @@ get_header();
             </div>
         </section>
         <section class="scholar">
-            <h3 class="sr-only">Mon parcours scolaire</h3>
+            <h3>Mon parcours scolaire</h3>
             <div>
                 <?php if (have_rows('scholar')): ?>
                     <ol>
                         <?php while (have_rows('scholar')): the_row(); ?>
                             <li>
                                 <article>
-                                    <p><?= get_sub_field('starting') ?>-<?= get_sub_field('ending')?></p>
-                                    <h4><?= get_sub_field('title')?></h4>
-                                    <small><?= get_sub_field('description')?></small>
+                                    <p><?= get_sub_field('starting') ?>-<?= get_sub_field('ending') ?></p>
+                                    <h4><?= get_sub_field('title') ?></h4>
+                                    <small><?= get_sub_field('description') ?></small>
                                 </article>
                             </li>
                         <?php endwhile; ?>

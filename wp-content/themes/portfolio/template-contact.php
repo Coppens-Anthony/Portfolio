@@ -15,7 +15,7 @@ Template Name: Contact Page
 */
 
 ?>
-    <main class="contact">
+    <main class="contact section">
         <?php if ($successMessage): ?>
             <small class="success-message"><?php echo $successMessage; ?></small>
         <?php endif; ?>

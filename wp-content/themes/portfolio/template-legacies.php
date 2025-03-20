@@ -8,7 +8,7 @@ Template Name: Legacies Page
 get_header();
 
 ?>
-    <main class="legacies">
+    <main class="legacies section">
         <h2>
             <?= get_the_title() ?>
         </h2>

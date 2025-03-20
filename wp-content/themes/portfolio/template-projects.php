@@ -8,7 +8,7 @@ Template Name: Projects Page
 get_header();
 
 ?>
-    <main class="projects">
+    <main class="projects section">
         <h2>
             <?= get_field('title') ?>
         </h2>

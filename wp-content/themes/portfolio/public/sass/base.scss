@@ -36,9 +36,10 @@ body {
 }
 h1, h2, h3, h4{
   font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.5rem;
 }
 h2{
-  font-size: 1.2rem;
+  font-size: 2rem;
   margin-bottom: 4rem;
 }
 a {
@@ -69,4 +70,14 @@ abbr {
 }
 .second-color{
   color: #C0A062;
+}
+.section{
+  width: 80%;
+  margin: 5rem auto auto;
+  @media (min-width: $breakpoint-m) {
+    margin: 8rem auto auto;
+  }
+  h2{
+    margin-bottom: 5rem;
+  }
 }

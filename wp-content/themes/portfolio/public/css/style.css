@@ -241,6 +241,10 @@ abbr {
   z-index: 999;
   font-size: 1.2rem;
 }
+.main-nav a:hover {
+  color: #C0A062;
+  opacity: 0.9;
+}
 .main-nav a img {
   height: 5rem;
   width: 50%;
@@ -487,7 +491,7 @@ abbr {
 }
 .contact .contact-form div .error {
   color: #f43c3c;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   display: block;
   text-align: left;
   margin-top: 0.3rem;
@@ -508,18 +512,13 @@ abbr {
   color: black;
   transition: 0.5s;
 }
-.contact .success-message {
+.contact .success-message p {
   color: #35d535;
-  font-size: 0.7rem;
+  font-size: 1.2rem;
   margin: 0 auto 3rem;
   display: block;
   width: 77%;
   text-align: center;
-}
-@media (min-width: 920px) {
-  .contact .success-message {
-    font-size: 0.8rem;
-  }
 }
 
 .singleProject .general_content {
@@ -843,6 +842,7 @@ abbr {
   }
   .about .scholar div ol li:nth-child(even) article {
     margin-left: 20%;
+    text-align: left;
   }
 }
 .about .scholar div ol li article p {

@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Anthony Coppens">
-    <meta name="keywords" content="html, portfolio, projets, infographie, site, web, design">
+    <meta name="keywords"
+          content="Portfolio, Anthony Coppens, d&eacute;veloppeur web, graphiste, design, d&eacute;veloppeur, front-end, back-end, full-stack, HEPL, &eacute;tudiant, wordpress, github, cv, portfolio">
+    <meta name="description"
+          content="D&eacute;couvrez le portfolio d&apos;Anthony Coppens. &Eacute;tudiant &agrave; l&apos;HEPL de Seraing, en voie de devenir un d&eacute;veloppeur full stack.">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <!--<link rel="stylesheet" href="<?php /*= dw_asset("css/main.css") */ ?>">-->

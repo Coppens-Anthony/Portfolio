@@ -1,13 +1,4 @@
 <?php
-
-session_start();
-$errors = $_SESSION['form_errors'] ?? [];
-$data = $_SESSION['form_data'] ?? [];
-$successMessage = $_SESSION['form_success'] ?? '';
-unset($_SESSION['form_errors']);
-unset($_SESSION['form_data']);
-unset($_SESSION['form_success']);
-
 get_header();
 
 /*
@@ -16,8 +7,16 @@ Template Name: Contact Page
 
 ?>
     <main class="contact section">
-        <?php if ($successMessage): ?>
-            <small class="success-message"><?php echo $successMessage; ?></small>
+        <?php
+        $errors = $_SESSION['contact_form_errors'] ?? [];
+        unset($_SESSION['contact_form_errors']);
+        $success = $_SESSION['contact_form_success'] ?? false;
+        unset($_SESSION['contact_form_success']);
+
+        if ($success): ?>
+            <div class="success-message">
+                <p><?= $success; ?></p>
+            </div>
         <?php endif; ?>
         <h2>
             <?= get_field('title') ?>
@@ -45,59 +44,57 @@ Template Name: Contact Page
             </section>
             <section class="contact-form">
                 <h3 class="sr-only">Formulaire de contact</h3>
-                <form action="/wp-content/themes/portfolio/traitement.php" method="post">
+                <form action="<?= admin_url('admin-post.php'); ?>" method="post">
                     <div>
                         <label for="lastname">Nom
                             <span class="second-color">*</span>
-                            <?php if (!empty($errors['lastname'])): ?>
-                                <small class="error"><?php echo $errors['lastname']; ?></small>
+                            <?php if (isset($errors['lastname'])): ?>
+                                <small class="error"><?= $errors['lastname']; ?></small>
                             <?php endif; ?>
                         </label>
-                        <input type="text" id="lastname" name="lastname" placeholder="Doe"
-                               value="<?php echo htmlspecialchars($data['lastname'] ?? ''); ?>">
+                        <input type="text" id="lastname" name="lastname" placeholder="Doe">
                     </div>
                     <div>
                         <label for="firstname">Pr&eacute;nom
                             <span class="second-color">*</span>
-                            <?php if (!empty($errors['firstname'])): ?>
-                                <small class="error"><?php echo $errors['firstname']; ?></small>
+                            <?php if (isset($errors['firstname'])): ?>
+                                <small class="error"><?= $errors['firstname']; ?></small>
                             <?php endif; ?>
                         </label>
-                        <input type="text" id="firstname" name="firstname" placeholder="John"
-                               value="<?php echo htmlspecialchars($data['firstname'] ?? ''); ?>">
+                        <input type="text" id="firstname" name="firstname" placeholder="John">
                     </div>
 
                     <div>
                         <label for="email">Email
                             <span class="second-color">*</span>
-                            <?php if (!empty($errors['email'])): ?>
-                                <small class="error"><?php echo $errors['email']; ?></small>
+                            <?php if (isset($errors['email'])): ?>
+                                <small class="error"><?= $errors['email']; ?></small>
                             <?php endif; ?>
                         </label>
-                        <input type="text" id="email" name="email" placeholder="john.doe@gmail.com"
-                               value="<?php echo htmlspecialchars($data['email'] ?? ''); ?>">
+                        <input type="text" id="email" name="email" placeholder="john.doe@gmail.com">
                     </div>
 
                     <div>
                         <label for="subject">Sujet
                             <span class="second-color">*</span>
-                            <?php if (!empty($errors['subject'])): ?>
-                                <small class="error"><?php echo $errors['subject']; ?></small>
+                            <?php if (isset($errors['subject'])): ?>
+                                <small class="error"><?= $errors['subject']; ?></small>
                             <?php endif; ?>
                         </label>
-                        <input type="text" id="subject" name="subject" placeholder="Prise de contact"
-                               value="<?php echo htmlspecialchars($data['subject'] ?? ''); ?>">
+                        <input type="text" id="subject" name="subject" placeholder="Prise de contact">
                     </div>
 
                     <div>
                         <label for="message">Message
                             <span class="second-color">*</span>
-                            <?php if (!empty($errors['message'])): ?>
-                                <small class="error"><?php echo $errors['message']; ?></small>
+                            <?php if (isset($errors['message'])): ?>
+                                <small class="error"><?= $errors['message']; ?></small>
                             <?php endif; ?>
                         </label>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Renseignez votre message..." value="<?php echo htmlspecialchars($data['message'] ?? ''); ?>"></textarea>
+                        <textarea name="message" id="message" cols="30" rows="10"
+                                  placeholder="Renseignez votre message..."></textarea>
                     </div>
+                    <input type="hidden" name="action" value="dw_submit_contact_form">
                     <button type="submit" title="Soumettre vos donn&eacute;es" name="submit">Envoyer</button>
                 </form>
             </section>

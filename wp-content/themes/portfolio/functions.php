@@ -1,5 +1,10 @@
 <?php
 
+
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 function dw_asset(string $file): string
 {
     return get_template_directory_uri() . '/public/' . $file;
@@ -80,4 +85,38 @@ function dw_get_navigation_links(string $location): array
         $links[] = $link;
     }
     return $links;
+}
+
+register_post_type('contact_message', [
+    'label' => 'Messages de contact',
+    'description' => 'Les envois de formulaire via la page de contact',
+    'menu_position' => 10,
+    'menu_icon' => 'dashicons-email',
+    'public' => false,
+    'show_ui' => true,
+    'has_archive' => false,
+    'supports' => ['title','editor'],
+]);
+
+add_action('admin_post_dw_submit_contact_form', 'dw_handle_contact_form');
+add_action('admin_post_nopriv_dw_submit_contact_form', 'dw_handle_contact_form');
+
+require_once(__DIR__.'/forms/ContactForm.php');
+
+function dw_handle_contact_form()
+{
+    $form = (new \DW_Theme\Forms\ContactForm())
+        ->rule('lastname', 'required')
+        ->rule('firstname', 'required')
+        ->rule('email', 'required')
+        ->rule('email', 'email')
+        ->rule('subject', 'required')
+        ->rule('message', 'required')
+        ->sanitize('lastname', 'sanitize_text_field')
+        ->sanitize('firstname', 'sanitize_text_field')
+        ->sanitize('email', 'sanitize_text_field')
+        ->sanitize('subject', 'sanitize_text_field')
+        ->sanitize('message', 'sanitize_textarea_field');
+
+    return $form->handle($_POST);
 }

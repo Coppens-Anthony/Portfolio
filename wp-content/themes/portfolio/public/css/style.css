@@ -837,15 +837,22 @@ abbr {
   top: 0;
   left: 50%;
   width: 4px;
-  height: 100%;
+  height: 0;
   background-color: #C0A062;
   transform: translateX(-50%);
+  transition: height 1s ease-in-out;
+}
+.about .scholar div ol.animate::before {
+  height: 100%;
 }
 .about .scholar div ol li {
   position: relative;
   margin-bottom: 5rem;
   text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
   background-color: black;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 @media (min-width: 920px) {
   .about .scholar div ol li {
@@ -855,9 +862,10 @@ abbr {
     content: "";
     position: absolute;
     top: 50%;
-    width: 10%;
+    width: 0;
     height: 4px;
     background-color: #C0A062;
+    transition: width 0.5s ease-in-out;
   }
 }
 .about .scholar div ol li:last-child {
@@ -908,6 +916,13 @@ abbr {
   font-family: Raleway, Arial, Helvetica, Tahoma, sans-serif;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+}
+.about .scholar div ol .visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.about .scholar div ol .line-visible::before {
+  width: 10%;
 }
 
 .legacies {

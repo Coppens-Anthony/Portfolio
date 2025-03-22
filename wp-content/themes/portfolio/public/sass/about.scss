@@ -115,25 +115,35 @@
           top: 0;
           left: 50%;
           width: 4px;
-          height: 100%;
+          height: 0;
           background-color: #C0A062;
           transform: translateX(-50%);
+          transition: height 1s ease-in-out;
+        }
+
+        &.animate::before {
+          height: 100%;
         }
 
         li {
           position: relative;
           margin-bottom: 5rem;
           text-align: center;
+          opacity: 0;
+          transform: translateY(30px);
           background-color: black;
+          transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+
           @media (min-width: $breakpoint-l) {
             background-color: transparent;
             &::before {
               content: "";
               position: absolute;
               top: 50%;
-              width: 10%;
+              width: 0;
               height: 4px;
               background-color: #C0A062;
+              transition: width 0.5s ease-in-out;
             }
           }
 
@@ -175,6 +185,7 @@
             padding: 1rem 0;
             border-radius: 10px;
             position: relative;
+
             @media (min-width: $breakpoint-l) {
               padding: 1rem;
             }
@@ -193,8 +204,16 @@
             }
           }
         }
+
+        .visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        .line-visible::before {
+          width: 10%;
+        }
       }
     }
   }
-
 }

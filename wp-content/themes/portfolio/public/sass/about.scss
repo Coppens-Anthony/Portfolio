@@ -15,6 +15,7 @@
       @media (min-width: $breakpoint-l) {
         width: 50%;
       }
+
       article {
         &:nth-child(2) {
           margin-bottom: 2rem;
@@ -32,11 +33,13 @@
         }
       }
     }
-    .img__container{
+
+    .img__container {
       @media (min-width: $breakpoint-l) {
         width: 35%;
       }
-      img{
+
+      img {
         width: 100%;
         height: 100%;
         border-radius: 10px;
@@ -85,18 +88,54 @@
     }
   }
 
+  h3 {
+    font-size: 1.5rem;
+    color: #C0A062;
+
+  }
+
   .scholar {
     margin-top: 6rem;
+    position: relative;
 
     div {
       margin-top: 2rem;
+      @media (min-width: $breakpoint-l) {
+        margin-top: 4rem;
+      }
+
       ol {
         display: flex;
         flex-direction: column;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 50%;
+          width: 4px;
+          height: 100%;
+          background-color: #C0A062;
+          transform: translateX(-50%);
+        }
 
         li {
-          margin-bottom: 10rem;
+          position: relative;
+          margin-bottom: 5rem;
           text-align: center;
+          background-color: black;
+          @media (min-width: $breakpoint-l) {
+            background-color: transparent;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 50%;
+              width: 10%;
+              height: 4px;
+              background-color: #C0A062;
+            }
+          }
 
           &:last-child {
             margin-bottom: 0;
@@ -104,25 +143,42 @@
 
           @media (min-width: $breakpoint-l) {
             width: 50%;
+            text-align: start;
+
             &:nth-child(odd) {
               text-align: end;
 
               article {
                 margin-right: 20%;
               }
+
+              &::before {
+                left: 90%;
+              }
             }
 
             &:nth-child(even) {
               align-self: flex-end;
+              text-align: start;
 
               article {
                 margin-left: 20%;
-                text-align: left;
+              }
+
+              &::before {
+                right: 90%;
               }
             }
           }
 
           article {
+            padding: 1rem 0;
+            border-radius: 10px;
+            position: relative;
+            @media (min-width: $breakpoint-l) {
+              padding: 1rem;
+            }
+
             p {
               color: #C0A062;
               font-family: Georgia, "Times New Roman", Times, serif;
@@ -140,8 +196,5 @@
       }
     }
   }
-  h3{
-    font-size: 1.5rem;
-    color: #C0A062;
-  }
+
 }

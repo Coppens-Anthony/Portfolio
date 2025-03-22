@@ -56,7 +56,7 @@ get_header();
                 <?php if (have_rows('scholar')): ?>
                     <ol>
                         <?php while (have_rows('scholar')): the_row(); ?>
-                            <li>
+                            <li class="checkpoint">
                                 <article>
                                     <p><?= get_sub_field('starting') ?>-<?= get_sub_field('ending') ?></p>
                                     <h4><?= get_sub_field('title') ?></h4>

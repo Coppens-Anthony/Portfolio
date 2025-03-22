@@ -810,19 +810,55 @@ abbr {
   width: 100%;
   height: auto;
 }
+.about h3 {
+  font-size: 1.5rem;
+  color: #C0A062;
+}
 .about .scholar {
   margin-top: 6rem;
+  position: relative;
 }
 .about .scholar div {
   margin-top: 2rem;
 }
+@media (min-width: 920px) {
+  .about .scholar div {
+    margin-top: 4rem;
+  }
+}
 .about .scholar div ol {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+.about .scholar div ol::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background-color: #C0A062;
+  transform: translateX(-50%);
 }
 .about .scholar div ol li {
-  margin-bottom: 10rem;
+  position: relative;
+  margin-bottom: 5rem;
   text-align: center;
+  background-color: black;
+}
+@media (min-width: 920px) {
+  .about .scholar div ol li {
+    background-color: transparent;
+  }
+  .about .scholar div ol li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 10%;
+    height: 4px;
+    background-color: #C0A062;
+  }
 }
 .about .scholar div ol li:last-child {
   margin-bottom: 0;
@@ -830,6 +866,7 @@ abbr {
 @media (min-width: 920px) {
   .about .scholar div ol li {
     width: 50%;
+    text-align: start;
   }
   .about .scholar div ol li:nth-child(odd) {
     text-align: end;
@@ -837,12 +874,28 @@ abbr {
   .about .scholar div ol li:nth-child(odd) article {
     margin-right: 20%;
   }
+  .about .scholar div ol li:nth-child(odd)::before {
+    left: 90%;
+  }
   .about .scholar div ol li:nth-child(even) {
     align-self: flex-end;
+    text-align: start;
   }
   .about .scholar div ol li:nth-child(even) article {
     margin-left: 20%;
-    text-align: left;
+  }
+  .about .scholar div ol li:nth-child(even)::before {
+    right: 90%;
+  }
+}
+.about .scholar div ol li article {
+  padding: 1rem 0;
+  border-radius: 10px;
+  position: relative;
+}
+@media (min-width: 920px) {
+  .about .scholar div ol li article {
+    padding: 1rem;
   }
 }
 .about .scholar div ol li article p {
@@ -855,10 +908,6 @@ abbr {
   font-family: Raleway, Arial, Helvetica, Tahoma, sans-serif;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
-}
-.about h3 {
-  font-size: 1.5rem;
-  color: #C0A062;
 }
 
 .legacies {

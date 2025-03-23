@@ -14,15 +14,15 @@ Template Name: Contact Page
         unset($_SESSION['contact_form_success']);
 
         if ($success): ?>
-            <div class="success-message">
+            <div class="success-message animate">
                 <p><?= $success; ?></p>
             </div>
         <?php endif; ?>
-        <h2>
+        <h2 class="animate">
             <?= get_field('title') ?>
         </h2>
         <div>
-            <section class="contact-information" itemscope itemtype="https://schema.org/Person">
+            <section class="contact-information animate" itemscope itemtype="https://schema.org/Person">
                 <h3 class="sr-only">Informations pour me joindre</h3>
                 <p class="introducing-sentence">
                     <?= get_field('description') ?>
@@ -45,7 +45,7 @@ Template Name: Contact Page
             <section class="contact-form">
                 <h3 class="sr-only">Formulaire de contact</h3>
                 <form action="<?= admin_url('admin-post.php'); ?>" method="post">
-                    <div>
+                    <div class="animate">
                         <label for="lastname">Nom
                             <span class="second-color">*</span>
                             <?php if (isset($errors['lastname'])): ?>
@@ -54,7 +54,7 @@ Template Name: Contact Page
                         </label>
                         <input type="text" id="lastname" name="lastname" placeholder="Doe">
                     </div>
-                    <div>
+                    <div class="animate">
                         <label for="firstname">Pr&eacute;nom
                             <span class="second-color">*</span>
                             <?php if (isset($errors['firstname'])): ?>
@@ -64,7 +64,7 @@ Template Name: Contact Page
                         <input type="text" id="firstname" name="firstname" placeholder="John">
                     </div>
 
-                    <div>
+                    <div class="animate">
                         <label for="email">Email
                             <span class="second-color">*</span>
                             <?php if (isset($errors['email'])): ?>
@@ -74,7 +74,7 @@ Template Name: Contact Page
                         <input type="text" id="email" name="email" placeholder="john.doe@gmail.com">
                     </div>
 
-                    <div>
+                    <div class="animate">
                         <label for="subject">Sujet
                             <span class="second-color">*</span>
                             <?php if (isset($errors['subject'])): ?>
@@ -84,7 +84,7 @@ Template Name: Contact Page
                         <input type="text" id="subject" name="subject" placeholder="Prise de contact">
                     </div>
 
-                    <div>
+                    <div class="animate">
                         <label for="message">Message
                             <span class="second-color">*</span>
                             <?php if (isset($errors['message'])): ?>
@@ -95,7 +95,7 @@ Template Name: Contact Page
                                   placeholder="Renseignez votre message..."></textarea>
                     </div>
                     <input type="hidden" name="action" value="dw_submit_contact_form">
-                    <button type="submit" title="Soumettre vos donn&eacute;es" name="submit">Envoyer</button>
+                    <button class="animate" type="submit" title="Soumettre vos donn&eacute;es" name="submit">Envoyer</button>
                 </form>
             </section>
         </div>

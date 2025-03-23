@@ -2,10 +2,10 @@
 
 <?php if (have_posts()): while (have_posts()): the_post(); ?>
     <main class="singleProject section">
-        <h2>
+        <h2 class="animate">
             <?= get_field('title') ?>
         </h2>
-        <section class="general_content description">
+        <section class="general_content description animate">
             <div class="content_container">
                 <h3>
                     <?= get_field('first_description_title') ?>
@@ -24,7 +24,7 @@
                 <?= wp_get_attachment_image(get_field('description_img'), 'desc'); ?>
             </div>
         </section>
-        <section class="general_content functionalities">
+        <section class="general_content functionalities animate">
             <div class="img_container">
                 <?= wp_get_attachment_image(get_field('full_img'), 'medium_large'); ?>
             </div>
@@ -36,7 +36,7 @@
             </div>
         </section>
         <a href="<?= get_post_type_archive_link('project') ?>" title="Retourner à la page des projets"
-           class="return_to_projects">Retour aux projets</a>
+           class="return_to_projects animate">Retour aux projets</a>
     </main>
 
 <?php endwhile; else: ?>

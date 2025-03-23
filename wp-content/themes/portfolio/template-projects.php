@@ -9,10 +9,10 @@ get_header();
 
 ?>
     <main class="projects section">
-        <h2>
+        <h2 class="animate">
             <?= get_field('title') ?>
         </h2>
-        <section class="projects__container">
+        <section class="projects__container animate">
             <h3 class="sr-only">Liste de mes projets</h3>
             <?php
             $projects = new WP_Query([
@@ -22,7 +22,7 @@ get_header();
             ]);
 
             if ($projects->have_posts()): while ($projects->have_posts()): $projects->the_post(); ?>
-                <article>
+                <article class="animate">
                     <a href="<?= get_the_permalink(); ?>" title="Consulter le projet">
                         <span class="sr-only">Découvrir le projet "<?= get_the_title(); ?>"</span>
                     </a>

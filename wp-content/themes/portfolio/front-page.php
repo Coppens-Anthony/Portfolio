@@ -11,7 +11,7 @@ Template Name: Home Page
 ?>
 
     <main class="home section" itemscope itemtype="https://schema.org/Person">
-        <section>
+        <section class="animate">
             <h2 itemprop="jobTitle">
                 <?= get_field('job') ?>
             </h2>
@@ -30,7 +30,7 @@ Template Name: Home Page
                 <?= get_field('to_projects') ?>
             </a>
         </section>
-        <div class="img__container">
+        <div class="img__container animate">
             <?= wp_get_attachment_image(get_field('me_img'), 'medium'); ?>
         </div>
         <div class="rectangle"></div>

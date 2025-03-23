@@ -13,7 +13,8 @@ body {
   color: white;
   overflow-x: hidden;
 }
-.links{
+
+.links {
   color: #C0A062;
   padding: 0.5rem 2%;
   border: 1px solid #C0A062;
@@ -23,7 +24,8 @@ body {
   width: 40%;
   text-align: center;
   transition: 0.5s;
-  &:hover{
+
+  &:hover {
     background-color: #C0A062;
     color: black;
     transition: 0.5s;
@@ -34,21 +36,26 @@ body {
     font-size: 1rem;
   }
 }
-h1, h2, h3, h4{
+
+h1, h2, h3, h4 {
   font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 1.5rem;
 }
-h2{
+
+h2 {
   font-size: 2rem;
   margin-bottom: 4rem;
 }
+
 a {
   text-decoration: none;
   color: white;
 }
+
 .uppercase {
   text-transform: uppercase;
 }
+
 .sr-only {
   border: 0 !important;
   clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
@@ -62,16 +69,20 @@ a {
   width: 1px !important;
   white-space: nowrap !important; /* 3 */
 }
-img{
+
+img {
   object-fit: contain;
 }
+
 abbr {
   text-decoration: none;
 }
-.second-color{
+
+.second-color {
   color: #C0A062;
 }
-.section{
+
+.section {
   width: 80%;
   margin: 5rem auto auto;
   @media (min-width: $breakpoint-m) {
@@ -84,7 +95,19 @@ abbr {
     width: 40%;
   }
 
-  h2{
+  h2 {
     margin-bottom: 5rem;
   }
+}
+
+.animate {
+  opacity: 0;
+  transition: all 0.5s ease-out;
+  transition-delay: 0.5s;
+  transform: translateY(5rem);
+}
+
+.scroll-animation {
+  transform: translateY(0);
+  opacity: 1;
 }

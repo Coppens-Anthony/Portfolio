@@ -78,6 +78,7 @@
     flex-direction: column-reverse;
     margin-bottom: 4rem;
     @media (min-width: $breakpoint-l) {
+      margin-bottom: 6rem;
       flex-direction: row;
       gap: 5rem;
       align-items: flex-start;

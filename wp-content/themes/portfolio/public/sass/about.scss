@@ -104,7 +104,7 @@
         margin-top: 4rem;
       }
 
-      ol {
+      .scholar_container {
         display: flex;
         flex-direction: column;
         position: relative;
@@ -121,11 +121,11 @@
           transition: height 1s ease-in-out;
         }
 
-        &.animate::before {
+        &.line-animation::before {
           height: 100%;
         }
 
-        li {
+        .scholar_item {
           position: relative;
           margin-bottom: 5rem;
           text-align: center;

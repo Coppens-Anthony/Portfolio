@@ -1,33 +1,37 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const timeline = document.querySelector(".scholar ol");
-    const items = document.querySelectorAll(".scholar ol li");
+    const animatables = document.querySelectorAll(".animate");
+    const timeline = document.querySelector(".scholar_container");
+    const items = document.querySelectorAll(".scholar_item");
 
     const observerOptions = {
         root: null,
         rootMargin: "0px",
-        threshold: 0.5
+        threshold: 0.1
     };
-
-    let lastObserved = 0;
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry, index) => {
             if (entry.isIntersecting) {
-                if (index === 0) {
-                    timeline.classList.add("animate");
+                if (entry.target.classList.contains("animate")) {
+                    entry.target.classList.add("scroll-animation");
                 }
 
-                setTimeout(() => {
-                    entry.target.classList.add("line-visible");
+                if (entry.target.tagName === "LI") {
+                    if (index === 0) {
+                        timeline.classList.add("line-animation");
+                    }
+
                     setTimeout(() => {
-                        entry.target.classList.add("visible");
-                    }, 500);
-                }, index * 400);
+                        entry.target.classList.add("line-visible");
+                        setTimeout(() => {
+                            entry.target.classList.add("visible");
+                        }, 500);
+                    }, index * 400);
+                }
             }
         });
     }, observerOptions);
 
-    items.forEach((item, index) => {
-        observer.observe(item);
-    });
+    animatables.forEach((animatable) => observer.observe(animatable));
+    items.forEach((item) => observer.observe(item));
 });

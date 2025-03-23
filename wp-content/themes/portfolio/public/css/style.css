@@ -150,6 +150,18 @@ abbr {
   margin-bottom: 5rem;
 }
 
+.animate {
+  opacity: 0;
+  transition: all 0.5s ease-out;
+  transition-delay: 0.5s;
+  transform: translateY(5rem);
+}
+
+.scroll-animation {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 .rectangle:after {
   content: "";
   position: absolute;
@@ -594,6 +606,7 @@ abbr {
 }
 @media (min-width: 920px) {
   .singleProject .functionalities {
+    margin-bottom: 6rem;
     flex-direction: row;
     gap: 5rem;
     align-items: flex-start;
@@ -826,12 +839,12 @@ abbr {
     margin-top: 4rem;
   }
 }
-.about .scholar div ol {
+.about .scholar div .scholar_container {
   display: flex;
   flex-direction: column;
   position: relative;
 }
-.about .scholar div ol::before {
+.about .scholar div .scholar_container::before {
   content: "";
   position: absolute;
   top: 0;
@@ -842,10 +855,10 @@ abbr {
   transform: translateX(-50%);
   transition: height 1s ease-in-out;
 }
-.about .scholar div ol.animate::before {
+.about .scholar div .scholar_container.line-animation::before {
   height: 100%;
 }
-.about .scholar div ol li {
+.about .scholar div .scholar_container .scholar_item {
   position: relative;
   margin-bottom: 5rem;
   text-align: center;
@@ -855,10 +868,10 @@ abbr {
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 @media (min-width: 920px) {
-  .about .scholar div ol li {
+  .about .scholar div .scholar_container .scholar_item {
     background-color: transparent;
   }
-  .about .scholar div ol li::before {
+  .about .scholar div .scholar_container .scholar_item::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -868,60 +881,60 @@ abbr {
     transition: width 0.5s ease-in-out;
   }
 }
-.about .scholar div ol li:last-child {
+.about .scholar div .scholar_container .scholar_item:last-child {
   margin-bottom: 0;
 }
 @media (min-width: 920px) {
-  .about .scholar div ol li {
+  .about .scholar div .scholar_container .scholar_item {
     width: 50%;
     text-align: start;
   }
-  .about .scholar div ol li:nth-child(odd) {
+  .about .scholar div .scholar_container .scholar_item:nth-child(odd) {
     text-align: end;
   }
-  .about .scholar div ol li:nth-child(odd) article {
+  .about .scholar div .scholar_container .scholar_item:nth-child(odd) article {
     margin-right: 20%;
   }
-  .about .scholar div ol li:nth-child(odd)::before {
+  .about .scholar div .scholar_container .scholar_item:nth-child(odd)::before {
     left: 90%;
   }
-  .about .scholar div ol li:nth-child(even) {
+  .about .scholar div .scholar_container .scholar_item:nth-child(even) {
     align-self: flex-end;
     text-align: start;
   }
-  .about .scholar div ol li:nth-child(even) article {
+  .about .scholar div .scholar_container .scholar_item:nth-child(even) article {
     margin-left: 20%;
   }
-  .about .scholar div ol li:nth-child(even)::before {
+  .about .scholar div .scholar_container .scholar_item:nth-child(even)::before {
     right: 90%;
   }
 }
-.about .scholar div ol li article {
+.about .scholar div .scholar_container .scholar_item article {
   padding: 1rem 0;
   border-radius: 10px;
   position: relative;
 }
 @media (min-width: 920px) {
-  .about .scholar div ol li article {
+  .about .scholar div .scholar_container .scholar_item article {
     padding: 1rem;
   }
 }
-.about .scholar div ol li article p {
+.about .scholar div .scholar_container .scholar_item article p {
   color: #C0A062;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-.about .scholar div ol li article h4 {
+.about .scholar div .scholar_container .scholar_item article h4 {
   font-family: Raleway, Arial, Helvetica, Tahoma, sans-serif;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
-.about .scholar div ol .visible {
+.about .scholar div .scholar_container .visible {
   opacity: 1;
   transform: translateY(0);
 }
-.about .scholar div ol .line-visible::before {
+.about .scholar div .scholar_container .line-visible::before {
   width: 10%;
 }
 

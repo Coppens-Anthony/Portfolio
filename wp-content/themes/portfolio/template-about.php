@@ -9,10 +9,10 @@ get_header();
 
 ?>
     <main class="about section" itemscope itemtype="https://schema.org/Person">
-        <h2>
+        <h2 class="animate">
             <?= get_field('title') ?>
         </h2>
-        <div class="introduction__container">
+        <div class="introduction__container animate">
             <section>
                 <h3 class="sr-only">Description</h3>
                 <article>
@@ -36,7 +36,7 @@ get_header();
                 <?= wp_get_attachment_image(get_field('me_img'), 'medium'); ?>
             </div>
         </div>
-        <section class="competencies">
+        <section class="competencies animate">
             <h3>Mes compétences</h3>
             <div class="highway-slider">
                 <?php if (have_rows('competencies_slider')): ?>
@@ -51,12 +51,12 @@ get_header();
             </div>
         </section>
         <section class="scholar">
-            <h3>Mon parcours scolaire</h3>
+            <h3 class="animate">Mon parcours scolaire</h3>
             <div>
                 <?php if (have_rows('scholar')): ?>
-                    <ol>
+                    <ol class="scholar_container">
                         <?php while (have_rows('scholar')): the_row(); ?>
-                            <li class="checkpoint">
+                            <li class="scholar_item">
                                 <article>
                                     <p><?= get_sub_field('starting') ?>-<?= get_sub_field('ending') ?></p>
                                     <h4><?= get_sub_field('title') ?></h4>

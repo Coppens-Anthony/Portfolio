@@ -164,71 +164,20 @@ abbr {
 
 .rectangle:after {
   content: "";
-  position: absolute;
+  position: fixed;
   background-color: #2b2a2a;
-  width: 10%;
-  height: 100%;
+  width: 30%;
+  height: 120vh;
   rotate: -15deg;
   z-index: -1;
-  top: -5.5rem;
+  top: -3rem;
+  left: 55%;
 }
 @media (min-width: 800px) {
   .rectangle:after {
+    left: 60%;
+    width: 10%;
     rotate: -20deg;
-  }
-}
-
-.home .rectangle:after {
-  left: 55.9%;
-}
-@media (min-width: 800px) {
-  .home .rectangle:after {
-    left: 54.2%;
-  }
-}
-
-.about .rectangle:after {
-  left: 105.8%;
-}
-@media (min-width: 800px) {
-  .about .rectangle:after {
-    left: 74%;
-  }
-}
-
-.projects .rectangle:after {
-  left: 64%;
-}
-@media (min-width: 800px) {
-  .projects .rectangle:after {
-    left: 71.8%;
-  }
-}
-
-.singleProject .rectangle:after {
-  left: 84%;
-}
-@media (min-width: 800px) {
-  .singleProject .rectangle:after {
-    left: 61.2%;
-  }
-}
-
-.contact .rectangle:after {
-  left: 70%;
-}
-@media (min-width: 800px) {
-  .contact .rectangle:after {
-    left: 58.8%;
-  }
-}
-
-.legacies .rectangle:after {
-  left: 70%;
-}
-@media (min-width: 800px) {
-  .legacies .rectangle:after {
-    left: 75%;
   }
 }
 

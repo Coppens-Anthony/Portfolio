@@ -1,72 +1,17 @@
 .rectangle:after{
   content: "";
-  position: absolute;
+  position: fixed;
   background-color: #2B2A2AFF;
-  width: 10%;
-  height: 100%;
+  width: 30%;
+  height: 120vh;
   rotate: -15deg;
   z-index: -1;
-  top: -5.5rem;
+  top: -3rem;
+  left: 55%;
 
   @media (min-width: $breakpoint-m) {
+    left: 60%;
+    width: 10%;
     rotate: -20deg;
-  }
-
-}
-
-.home{
-  .rectangle:after {
-    left: 55.9%;
-
-    @media (min-width: $breakpoint-m) {
-      left: 54.2%;
-    }
-  }
-}
-
-.about{
-  .rectangle:after {
-    left: 105.8%;
-
-    @media (min-width: $breakpoint-m) {
-      left: 74%;
-    }
-  }
-}
-.projects{
-  .rectangle:after {
-    left: 64%;
-
-    @media (min-width: $breakpoint-m) {
-      left: 71.8%;
-    }
-  }
-}
-.singleProject{
-  .rectangle:after {
-    left: 84%;
-
-    @media (min-width: $breakpoint-m) {
-      left: 61.2%;
-    }
-  }
-}
-.contact{
-  .rectangle:after {
-    left: 70%;
-
-    @media (min-width: $breakpoint-m) {
-      left: 58.8%;
-    }
-  }
-}
-
-.legacies{
-  .rectangle:after {
-    left: 70%;
-
-    @media (min-width: $breakpoint-m) {
-      left: 75%;
-    }
   }
 }

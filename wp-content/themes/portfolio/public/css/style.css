@@ -775,6 +775,7 @@ abbr {
 .about h3 {
   font-size: 1.5rem;
   color: #C0A062;
+  text-align: center;
 }
 .about .scholar {
   margin-top: 6rem;
@@ -943,11 +944,11 @@ footer .footer-list {
   footer .footer-list {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 }
 footer .footer_nav, footer .coords, footer .socials {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   width: 100%;
 }
 @media (min-width: 800px) {
@@ -1003,9 +1004,9 @@ footer a:hover {
 }
 footer .legal {
   width: 80%;
-  border-top: 1px solid black;
-  margin: 2rem auto 0;
-  padding-top: 2rem;
+  border-top: 1px solid #ffffff;
+  margin: 1rem auto 0;
+  padding-top: 1rem;
   font-size: 0.8rem;
   display: flex;
   flex-direction: column;

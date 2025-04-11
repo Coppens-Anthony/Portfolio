@@ -22,12 +22,12 @@ footer {
     @media (min-width: $breakpoint-m) {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
     }
   }
 
   .footer_nav, .coords, .socials {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     width: 100%;
     @media (min-width: $breakpoint-m) {
       margin-bottom: 0;
@@ -84,9 +84,9 @@ footer {
 
   .legal {
     width: 80%;
-    border-top: 1px solid black;
-    margin: 2rem auto 0;
-    padding-top: 2rem;
+    border-top: 1px solid #ffffff;
+    margin: 1rem auto 0;
+    padding-top: 1rem;
     font-size: 0.8rem;
     display: flex;
     flex-direction: column;

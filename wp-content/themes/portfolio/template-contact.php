@@ -44,8 +44,8 @@ Template Name: Contact Page
             </section>
             <section class="contact-form">
                 <h3 class="sr-only">Formulaire de contact</h3>
-                <form action="<?= admin_url('admin-post.php'); ?>" method="post">
-                    <div class="animate">
+                <form action="<?= admin_url('admin-post.php'); ?>" method="post" class="animate">
+                    <div>
                         <label for="lastname">Nom
                             <span class="second-color">*</span>
                             <?php if (isset($errors['lastname'])): ?>
@@ -54,7 +54,7 @@ Template Name: Contact Page
                         </label>
                         <input type="text" id="lastname" name="lastname" placeholder="Doe">
                     </div>
-                    <div class="animate">
+                    <div>
                         <label for="firstname">Pr&eacute;nom
                             <span class="second-color">*</span>
                             <?php if (isset($errors['firstname'])): ?>
@@ -64,7 +64,7 @@ Template Name: Contact Page
                         <input type="text" id="firstname" name="firstname" placeholder="John">
                     </div>
 
-                    <div class="animate">
+                    <div>
                         <label for="email">Email
                             <span class="second-color">*</span>
                             <?php if (isset($errors['email'])): ?>
@@ -74,7 +74,7 @@ Template Name: Contact Page
                         <input type="text" id="email" name="email" placeholder="john.doe@gmail.com">
                     </div>
 
-                    <div class="animate">
+                    <div>
                         <label for="subject">Sujet
                             <span class="second-color">*</span>
                             <?php if (isset($errors['subject'])): ?>
@@ -84,7 +84,7 @@ Template Name: Contact Page
                         <input type="text" id="subject" name="subject" placeholder="Prise de contact">
                     </div>
 
-                    <div class="animate">
+                    <div>
                         <label for="message">Message
                             <span class="second-color">*</span>
                             <?php if (isset($errors['message'])): ?>
@@ -95,7 +95,7 @@ Template Name: Contact Page
                                   placeholder="Renseignez votre message..."></textarea>
                     </div>
                     <input type="hidden" name="action" value="dw_submit_contact_form">
-                    <button class="animate" type="submit" title="Soumettre vos donn&eacute;es" name="submit">Envoyer</button>
+                    <button type="submit" title="Soumettre vos donn&eacute;es" name="submit">Envoyer</button>
                 </form>
             </section>
         </div>

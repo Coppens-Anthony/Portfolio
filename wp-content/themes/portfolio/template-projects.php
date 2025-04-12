@@ -23,29 +23,30 @@ get_header();
 
             if ($projects->have_posts()): while ($projects->have_posts()): $projects->the_post(); ?>
                 <article class="animate">
-                    <a href="<?= get_the_permalink(); ?>" title="Consulter le projet">
+                    <a href="<?= get_the_permalink(); ?>" title='Consulter le projet "<?= get_the_title(); ?>"'>
                         <span class="sr-only">Découvrir le projet "<?= get_the_title(); ?>"</span>
                     </a>
                     <div class="img_container">
                         <?= wp_get_attachment_image(get_field('cover_img'), 'medium'); ?>
                     </div>
-                    <section>
+                    <h4><?= get_the_title(); ?></h4>
+                    <!--<section>
                         <h4>
-                            <?= get_field('title') ?>
+                            <?php /*= get_field('title') */?>
                         </h4>
                         <p>
-                            <?= get_field('introduction_description') ?>
+                            <?php /*= get_field('introduction_description') */?>
                         </p>
-                        <?php if (have_rows('languages')): ?>
+                        <?php /*if (have_rows('languages')): */?>
                             <ul>
-                                <?php while (have_rows('languages')): the_row(); ?>
+                                <?php /*while (have_rows('languages')): the_row(); */?>
                                     <li>
-                                        <?= get_sub_field('language') ?>
+                                        <?php /*= get_sub_field('language') */?>
                                     </li>
-                                <?php endwhile; ?>
+                                <?php /*endwhile; */?>
                             </ul>
-                        <?php endif; ?>
-                    </section>
+                        <?php /*endif; */?>
+                    </section>-->
                 </article>
             <?php endwhile; else: ?>
                 <p>Je n'ai pas de projets à montrer pour le moment...</p>

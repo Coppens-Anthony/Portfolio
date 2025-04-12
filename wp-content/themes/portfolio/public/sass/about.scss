@@ -110,15 +110,18 @@
         position: relative;
 
         &::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 50%;
-          width: 4px;
-          height: 0;
-          background-color: #C0A062;
-          transform: translateX(-50%);
-          transition: height 1s ease-in-out;
+          @media (min-width: $breakpoint-l) {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 4px;
+            height: 0;
+            z-index: 1;
+            background-color: #C0A062;
+            transform: translateX(-50%);
+            transition: height 1s ease-in-out;
+          }
         }
 
         &.line-animation::before {
@@ -131,12 +134,10 @@
           text-align: center;
           opacity: 0;
           transform: translateY(30px);
-          background-color: black;
           transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 
-          @media (min-width: $breakpoint-l) {
-            background-color: transparent;
-            &::before {
+          &:before {
+            @media (min-width: $breakpoint-l) {
               content: "";
               position: absolute;
               top: 50%;
@@ -190,6 +191,21 @@
               padding: 1rem;
             }
 
+            &::after {
+              content: "";
+              position: absolute;
+              top: 100%;
+              left: 49.7%;
+              rotate: -180deg;
+              width: 4px;
+              height: 70%;
+              background-color: #C0A062;
+              transition: width 0.5s ease-in-out;
+              @media (min-width: $breakpoint-l) {
+                content: none;
+              }
+            }
+
             p {
               color: #C0A062;
               font-family: Georgia, "Times New Roman", Times, serif;
@@ -203,7 +219,11 @@
               margin-bottom: 0.5rem;
             }
           }
+          &:last-child article::after {
+            content: none;
+          }
         }
+
 
         .visible {
           opacity: 1;
@@ -216,4 +236,5 @@
       }
     }
   }
+
 }

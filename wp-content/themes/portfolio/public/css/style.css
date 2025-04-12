@@ -778,16 +778,19 @@ abbr {
   flex-direction: column;
   position: relative;
 }
-.about .scholar div .scholar_container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 4px;
-  height: 0;
-  background-color: #C0A062;
-  transform: translateX(-50%);
-  transition: height 1s ease-in-out;
+@media (min-width: 920px) {
+  .about .scholar div .scholar_container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 0;
+    z-index: 1;
+    background-color: #C0A062;
+    transform: translateX(-50%);
+    transition: height 1s ease-in-out;
+  }
 }
 .about .scholar div .scholar_container.line-animation::before {
   height: 100%;
@@ -798,14 +801,10 @@ abbr {
   text-align: center;
   opacity: 0;
   transform: translateY(30px);
-  background-color: black;
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 @media (min-width: 920px) {
-  .about .scholar div .scholar_container .scholar_item {
-    background-color: transparent;
-  }
-  .about .scholar div .scholar_container .scholar_item::before {
+  .about .scholar div .scholar_container .scholar_item:before {
     content: "";
     position: absolute;
     top: 50%;
@@ -853,6 +852,22 @@ abbr {
     padding: 1rem;
   }
 }
+.about .scholar div .scholar_container .scholar_item article::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 49.7%;
+  rotate: -180deg;
+  width: 4px;
+  height: 70%;
+  background-color: #C0A062;
+  transition: width 0.5s ease-in-out;
+}
+@media (min-width: 920px) {
+  .about .scholar div .scholar_container .scholar_item article::after {
+    content: none;
+  }
+}
 .about .scholar div .scholar_container .scholar_item article p {
   color: #C0A062;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -863,6 +878,9 @@ abbr {
   font-family: Raleway, Arial, Helvetica, Tahoma, sans-serif;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+}
+.about .scholar div .scholar_container .scholar_item:last-child article::after {
+  content: none;
 }
 .about .scholar div .scholar_container .visible {
   opacity: 1;

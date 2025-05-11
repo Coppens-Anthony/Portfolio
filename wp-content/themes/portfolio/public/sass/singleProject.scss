@@ -101,6 +101,18 @@
     }
   }
 
+  .projects__container{
+    margin-bottom: 4rem;
+    @media (min-width: $breakpoint-l) {
+      margin-bottom: 6rem;
+    }
+    h3{
+      color: #C0A062;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
   .return_to_projects {
     color: #C0A062;
     border: 1px solid #C0A062;

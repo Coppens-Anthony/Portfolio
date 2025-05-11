@@ -120,3 +120,5 @@ function dw_handle_contact_form()
 
     return $form->handle($_POST);
 }
+
+session_write_close();

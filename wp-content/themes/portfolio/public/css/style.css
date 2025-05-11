@@ -577,6 +577,19 @@ abbr {
 .singleProject .functionalities .functionalities_container p:last-child {
   margin-bottom: 0;
 }
+.singleProject .projects__container {
+  margin-bottom: 4rem;
+}
+@media (min-width: 920px) {
+  .singleProject .projects__container {
+    margin-bottom: 6rem;
+  }
+}
+.singleProject .projects__container h3 {
+  color: #C0A062;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
 .singleProject .return_to_projects {
   color: #C0A062;
   border: 1px solid #C0A062;
@@ -606,20 +619,20 @@ abbr {
 }
 
 @media (min-width: 800px) {
-  .projects .projects__container {
+  .projects__container ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
   }
 }
 @media (min-width: 920px) {
-  .projects .projects__container {
+  .projects__container ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3rem;
   }
 }
-.projects .projects__container article {
+.projects__container ul li article {
   cursor: pointer;
   position: relative;
   border-radius: 8px;
@@ -628,18 +641,18 @@ abbr {
   width: 75%;
 }
 @media (min-width: 800px) {
-  .projects .projects__container article {
+  .projects__container ul li article {
     width: 90%;
     margin-bottom: 0;
   }
 }
 @media (min-width: 920px) {
-  .projects .projects__container article {
+  .projects__container ul li article {
     width: 100%;
     margin-bottom: 0;
   }
 }
-.projects .projects__container article a {
+.projects__container ul li article a {
   position: absolute;
   top: 0;
   right: 0;
@@ -649,22 +662,22 @@ abbr {
   height: 100%;
   z-index: 1;
 }
-.projects .projects__container article .img_container {
+.projects__container ul li article .img_container {
   width: 100%;
   margin-top: 2rem;
 }
 @media (min-width: 920px) {
-  .projects .projects__container article .img_container {
+  .projects__container ul li article .img_container {
     width: 100%;
     margin-top: 0;
   }
 }
-.projects .projects__container article .img_container img {
+.projects__container ul li article .img_container img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
 }
-.projects .projects__container article h4 {
+.projects__container ul li article h4 {
   background-color: #C0A062;
   width: 65%;
   text-align: center;
@@ -677,7 +690,7 @@ abbr {
   line-height: 1.2rem;
   border-radius: 5px;
 }
-.projects .projects__container article:hover {
+.projects__container ul li article:hover {
   transform: scale(1.07);
   transition: 1s;
 }

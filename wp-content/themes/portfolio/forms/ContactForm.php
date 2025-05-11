@@ -54,7 +54,7 @@ class ContactForm
         // Envoyer un mail de notification.
         wp_mail(
             to: 'anthonycoppens04@gmail.com',
-            subject: 'Nouveau message de contact',
+            subject: 'Nouveau message de contact (Portfolio)',
             message: $this->generateEmailContent($data),
         );
 

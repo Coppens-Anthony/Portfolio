@@ -51,7 +51,7 @@
         <h2 class="sr-only">Mentions légales</h2>
         <small>© 2025 Anthony Coppens - Tous droits réservés.</small>
         <small>
-            <a href="/mentions-legales" title="Se renseigner sur le smentions légales">Mentions légales</a>
+            <a href="/mentions-legales" title="Se renseigner sur les mentions légales">Mentions légales</a>
         </small>
     </article>
 </footer>

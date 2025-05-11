@@ -21,34 +21,24 @@ get_header();
                 'orderby' => 'date',
             ]);
 
-            if ($projects->have_posts()): while ($projects->have_posts()): $projects->the_post(); ?>
-                <article class="animate">
-                    <a href="<?= get_the_permalink(); ?>" title='Consulter le projet "<?= get_the_title(); ?>"'>
-                        <span class="sr-only">Découvrir le projet "<?= get_the_title(); ?>"</span>
-                    </a>
-                    <div class="img_container">
-                        <?= wp_get_attachment_image(get_field('cover_img'), 'medium'); ?>
-                    </div>
-                    <h4><?= get_the_title(); ?></h4>
-                    <!--<section>
-                        <h4>
-                            <?php /*= get_field('title') */?>
-                        </h4>
-                        <p>
-                            <?php /*= get_field('introduction_description') */?>
-                        </p>
-                        <?php /*if (have_rows('languages')): */?>
-                            <ul>
-                                <?php /*while (have_rows('languages')): the_row(); */?>
-                                    <li>
-                                        <?php /*= get_sub_field('language') */?>
-                                    </li>
-                                <?php /*endwhile; */?>
-                            </ul>
-                        <?php /*endif; */?>
-                    </section>-->
-                </article>
-            <?php endwhile; else: ?>
+            if ($projects->have_posts()): ?>
+                <ul>
+                    <?php while ($projects->have_posts()): $projects->the_post(); ?>
+                        <li>
+                            <article class="animate">
+                                <a href="<?= get_the_permalink(); ?>"
+                                   title='Consulter le projet "<?= get_the_title(); ?>"'>
+                                    <span class="sr-only">Découvrir le projet "<?= get_the_title(); ?>"</span>
+                                </a>
+                                <div class="img_container">
+                                    <?= wp_get_attachment_image(get_field('cover_img'), 'medium'); ?>
+                                </div>
+                                <h4><?= get_the_title(); ?></h4>
+                            </article>
+                        </li>
+                    <?php endwhile; ?>
+                </ul>
+            <?php else: ?>
                 <p>Je n'ai pas de projets à montrer pour le moment...</p>
             <?php endif; ?>
         </section>

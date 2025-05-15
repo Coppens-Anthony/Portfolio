@@ -31,7 +31,7 @@ get_header();
                                     <span class="sr-only">Découvrir le projet "<?= get_the_title(); ?>"</span>
                                 </a>
                                 <div class="img_container">
-                                    <?= wp_get_attachment_image(get_field('cover_img'), 'medium'); ?>
+                                    <?= wp_get_attachment_image(get_field('cover_img'), 'large'); ?>
                                 </div>
                                 <h4><?= get_the_title(); ?></h4>
                             </article>

@@ -1,5 +1,5 @@
 <footer>
-    <article class="footer-list">
+    <section class="footer-list">
         <h2 class="sr-only">Footer</h2>
         <nav class="footer_nav">
             <h3>Navigation <span class="hidden">secondaire</span></h3>
@@ -46,14 +46,14 @@
                 </li>
             </ul>
         </section>
-    </article>
-    <article class="legal">
+    </section>
+    <section class="legal">
         <h2 class="sr-only">Mentions légales</h2>
         <small>© 2025 Anthony Coppens - Tous droits réservés.</small>
         <small>
             <a href="/mentions-legales" title="Se renseigner sur les mentions légales">Mentions légales</a>
         </small>
-    </article>
+    </section>
 </footer>
 </body>
 </html>

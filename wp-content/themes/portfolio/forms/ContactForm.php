@@ -121,5 +121,4 @@ class ContactForm
             .'----'.PHP_EOL
             .'Adresse mail: '.$data['email'];
     }
-
 }

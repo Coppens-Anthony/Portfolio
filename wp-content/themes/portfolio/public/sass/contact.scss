@@ -6,6 +6,9 @@
 
     .contact-information {
       @media (min-width: $breakpoint-l) {
+        position: sticky;
+        top: 3rem;
+        align-self: flex-start;
         width: 40%;
         margin-right: 20%;
       }

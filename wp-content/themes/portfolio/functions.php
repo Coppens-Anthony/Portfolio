@@ -1,9 +1,10 @@
 <?php
 
-
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
+add_action('init', function () {
+    if (session_status() === PHP_SESSION_NONE) {
+        session_start();
+    }
+}, 1);
 
 function dw_asset(string $file): string
 {
@@ -105,7 +106,7 @@ require_once(__DIR__.'/forms/ContactForm.php');
 
 function dw_handle_contact_form()
 {
-    $form = (new \DW_Theme\Forms\ContactForm())
+    $form = (new \DW_Theme\forms\ContactForm())
         ->rule('lastname', 'required')
         ->rule('firstname', 'required')
         ->rule('email', 'required')

@@ -361,11 +361,6 @@ abbr {
   margin: 0;
 }
 @media (min-width: 800px) {
-  .home .intro div a {
-    width: 50%;
-  }
-}
-@media (min-width: 800px) {
   .home .intro .img__container {
     margin-left: auto;
     width: 35%;
@@ -384,6 +379,9 @@ abbr {
 }
 @media (min-width: 920px) {
   .contact div .contact-information {
+    position: sticky;
+    top: 3rem;
+    align-self: flex-start;
     width: 40%;
     margin-right: 20%;
   }
@@ -937,6 +935,24 @@ abbr {
 }
 .legacies .legacies__container p a:hover {
   text-decoration: underline;
+}
+
+.page404__desc {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+.page404__link {
+  width: 75%;
+  font-size: 1.2rem;
+  padding: 0.7rem 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 2rem 0 0;
+}
+@media (min-width: 800px) {
+  .page404__link {
+    width: 30%;
+  }
 }
 
 footer {

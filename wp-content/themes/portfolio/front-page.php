@@ -1,13 +1,10 @@
 <?php
 
-get_header();
-
-
 /*
 Template Name: Home Page
 */
 
-
+get_header();
 ?>
 
     <main class="home section" itemscope itemtype="https://schema.org/Person">

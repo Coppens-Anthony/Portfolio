@@ -1,6 +1,6 @@
 <?php
 
-namespace DW_Theme\Forms;
+namespace DW_Theme\forms;
 
 class ContactForm
 {

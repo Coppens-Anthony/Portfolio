@@ -9,7 +9,6 @@
           content="D&eacute;couvrez le portfolio d&apos;Anthony Coppens. &Eacute;tudiant &agrave; l&apos;HEPL de Seraing, en voie de devenir un d&eacute;veloppeur full stack.">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <!--<link rel="stylesheet" href="<?php /*= dw_asset("css/main.css") */ ?>">-->
     <link rel="stylesheet" href="/wp-content/themes/portfolio/public/css/style.css">
     <link rel="icon" href="/wp-content/themes/portfolio/src/svg/logo.svg">
     <script type="module" crossorigin src="/wp-content/themes/portfolio/public/js/main.js" defer></script>

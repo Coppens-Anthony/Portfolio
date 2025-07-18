@@ -10,17 +10,17 @@ get_header();
     <main class="home section" itemscope itemtype="https://schema.org/Person">
         <section class="intro">
             <div class="animate">
+                <p class="name">
+                    <span itemprop="givenName">
+                    <?= get_field('firstname') ?>
+                    </span>
+                        <span itemprop="familyName">
+                    <?= get_field('lastname') ?>
+                    </span>
+                </p>
                 <h2 itemprop="jobTitle">
                     <?= get_field('job') ?>
                 </h2>
-                <p class="name">
-                <span itemprop="givenName">
-                <?= get_field('firstname') ?>
-                </span>
-                    <span itemprop="familyName">
-                <?= get_field('lastname') ?>
-                </span>
-                </p>
                 <p>
                     <?= get_field('description') ?>
                 </p>

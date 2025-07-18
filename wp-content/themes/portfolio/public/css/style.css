@@ -321,6 +321,9 @@ abbr {
 }
 .home .intro div {
   margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 @media (min-width: 800px) {
   .home .intro div {
@@ -329,33 +332,23 @@ abbr {
   }
 }
 .home .intro div h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  margin: 0;
 }
 .home .intro div .name {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-style: italic;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #C0A062;
 }
-@media (min-width: 800px) {
-  .home .intro div .name {
-    margin: 2rem auto;
-  }
-}
 .home .intro div p {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  line-height: 1.5rem;
-}
-@media (min-width: 800px) {
-  .home .intro div p {
-    margin: 2rem auto;
-  }
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 .home .intro div a {
   width: 50%;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   padding: 0.7rem 0;
   font-family: Georgia, "Times New Roman", Times, serif;
   margin: 0;

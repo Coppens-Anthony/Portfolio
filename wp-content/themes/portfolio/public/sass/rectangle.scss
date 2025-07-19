@@ -3,15 +3,15 @@
   position: fixed;
   background-color: #2B2A2AFF;
   width: 30%;
-  height: 120vh;
+  height: 140vh;
   rotate: -15deg;
   z-index: -1;
-  top: -3rem;
+  top: -5rem;
   left: 55%;
 
   @media (min-width: $breakpoint-m) {
-    left: 60%;
+    left: 65%;
     width: 10%;
-    rotate: -20deg;
+    rotate: -29deg;
   }
 }

@@ -84,7 +84,7 @@ body {
 
 h1, h2, h3, h4 {
   font-family: Georgia, "Times New Roman", Times, serif;
-  line-height: 1.5rem;
+  line-height: 2rem;
 }
 
 h2 {
@@ -150,16 +150,28 @@ abbr {
   margin-bottom: 5rem;
 }
 
-.animate {
-  opacity: 0;
-  transition: all 0.5s ease-out;
-  transition-delay: 0.5s;
-  transform: translateY(5rem);
+body:not(.js) .animate {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+  transition: none;
 }
 
-.scroll-animation {
-  transform: translateY(0);
+body.js .animate {
+  opacity: 0;
+  transform: translateY(15rem);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  visibility: hidden;
+}
+
+body.js .animate.scroll-animation {
   opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.animate {
+  will-change: opacity, transform;
 }
 
 .rectangle:after {
@@ -167,17 +179,17 @@ abbr {
   position: fixed;
   background-color: #2b2a2a;
   width: 30%;
-  height: 120vh;
+  height: 140vh;
   rotate: -15deg;
   z-index: -1;
-  top: -3rem;
+  top: -5rem;
   left: 55%;
 }
 @media (min-width: 800px) {
   .rectangle:after {
-    left: 60%;
+    left: 65%;
     width: 10%;
-    rotate: -20deg;
+    rotate: -29deg;
   }
 }
 
@@ -393,6 +405,9 @@ abbr {
     margin-right: 5%;
   }
 }
+.contact div .contact-information div a:hover {
+  text-decoration: underline;
+}
 .contact div .contact-information #phone {
   height: 4rem;
 }
@@ -401,7 +416,7 @@ abbr {
 }
 .contact div .contact-information .introducing-sentence {
   font-size: 1.2rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
 }
 .contact .contact-form {
   text-align: center;
@@ -499,7 +514,7 @@ abbr {
 }
 .singleProject .general_content p {
   font-size: 1.2rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
 }
 .singleProject .description {
   flex-direction: column;
@@ -630,11 +645,13 @@ abbr {
     gap: 3rem;
   }
 }
+.projects__container ul li {
+  transition: transform 0.3s cubic-bezier(0.5, 0, 1, 1);
+}
 .projects__container ul li article {
   cursor: pointer;
   position: relative;
   border-radius: 8px;
-  transition: 1s;
   margin: 0 auto 4rem;
   width: 75%;
   height: 100%;
@@ -691,9 +708,9 @@ abbr {
   line-height: 1.2rem;
   border-radius: 5px;
 }
-.projects__container ul li article:hover {
+.projects__container ul li:hover {
   transform: scale(1.07);
-  transition: 1s;
+  transition: transform 0.3s cubic-bezier(0.5, 0, 1, 1);
 }
 
 .about .introduction__container {
@@ -723,7 +740,7 @@ abbr {
 }
 .about .introduction__container section article p {
   font-size: 1.2rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
 }
 @media (min-width: 920px) {
   .about .introduction__container .img__container {
@@ -799,20 +816,27 @@ abbr {
     top: 0;
     left: 50%;
     width: 4px;
-    height: 0;
+    height: 100%;
     z-index: 1;
     background-color: #C0A062;
     transform: translateX(-50%);
-    transition: height 1s ease-in-out;
   }
 }
-.about .scholar div .scholar_container.line-animation::before {
+body.js .about .scholar div .scholar_container::before {
+  height: 0;
+  transition: height 1s ease-in-out;
+}
+body.js .about .scholar div .scholar_container.line-animation::before {
   height: 100%;
 }
 .about .scholar div .scholar_container .scholar_item {
   position: relative;
   margin-bottom: 5rem;
   text-align: center;
+  opacity: 1;
+  transform: none;
+}
+body.js .about .scholar div .scholar_container .scholar_item {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
@@ -822,11 +846,17 @@ abbr {
     content: "";
     position: absolute;
     top: 50%;
-    width: 0;
+    width: 10%;
     height: 4px;
     background-color: #C0A062;
-    transition: width 0.5s ease-in-out;
   }
+}
+body.js .about .scholar div .scholar_container .scholar_item:before {
+  width: 0;
+  transition: width 0.5s ease-in-out;
+}
+body.js .about .scholar div .scholar_container .scholar_item.line-visible::before {
+  width: 10%;
 }
 .about .scholar div .scholar_container .scholar_item:last-child {
   margin-bottom: 0;
@@ -875,7 +905,6 @@ abbr {
   width: 4px;
   height: 70%;
   background-color: #C0A062;
-  transition: width 0.5s ease-in-out;
 }
 @media (min-width: 920px) {
   .about .scholar div .scholar_container .scholar_item article::after {
@@ -896,12 +925,9 @@ abbr {
 .about .scholar div .scholar_container .scholar_item:last-child article::after {
   content: none;
 }
-.about .scholar div .scholar_container .visible {
+body.js .about .scholar div .scholar_container .scholar_item.visible {
   opacity: 1;
   transform: translateY(0);
-}
-.about .scholar div .scholar_container .line-visible::before {
-  width: 10%;
 }
 
 .legacies {

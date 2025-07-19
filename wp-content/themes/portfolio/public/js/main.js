@@ -1,3 +1,5 @@
+document.body.classList.add('js');
+
 document.addEventListener("DOMContentLoaded", function () {
     const animatables = document.querySelectorAll(".animate");
     const timeline = document.querySelector(".scholar_container");
@@ -5,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const observerOptions = {
         root: null,
-        rootMargin: "0px",
+        rootMargin: '0px 0px -20px 0px',
         threshold: 0.1
     };
 

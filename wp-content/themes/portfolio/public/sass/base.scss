@@ -39,7 +39,7 @@ body {
 
 h1, h2, h3, h4 {
   font-family: Georgia, "Times New Roman", Times, serif;
-  line-height: 1.5rem;
+  line-height: 2rem;
 }
 
 h2 {
@@ -100,14 +100,26 @@ abbr {
   }
 }
 
-.animate {
-  opacity: 0;
-  transition: all 0.5s ease-out;
-  transition-delay: 0.5s;
-  transform: translateY(5rem);
+body:not(.js) .animate {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+  transition: none;
 }
 
-.scroll-animation {
-  transform: translateY(0);
+body.js .animate {
+  opacity: 0;
+  transform: translateY(15rem);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  visibility: hidden;
+}
+
+body.js .animate.scroll-animation {
   opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.animate{
+  will-change: opacity, transform;
 }

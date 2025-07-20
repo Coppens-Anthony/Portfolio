@@ -1,17 +1,18 @@
-.rectangle:after{
+body::after {
   content: "";
   position: fixed;
-  background-color: #2B2A2AFF;
-  width: 30%;
-  height: 140vh;
-  rotate: -15deg;
+  top: 0;
+  left: 10%;
+  width: 20vw;
+  height: 100vh;
+  background-color: #2B2A2A;
+  transform: skewX(30.5deg);
+  transform-origin: top right;
   z-index: -1;
-  top: -5rem;
-  left: 55%;
+  pointer-events: none;
 
   @media (min-width: $breakpoint-m) {
-    left: 65%;
-    width: 10%;
-    rotate: -29deg;
+    width: 10vw;
+    left: 50%;
   }
 }

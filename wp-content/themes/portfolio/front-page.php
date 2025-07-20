@@ -63,6 +63,5 @@ get_header();
                 <p>Je n'ai pas de projets à montrer pour le moment...</p>
             <?php endif; ?>
         </section>
-        <div class="rectangle"></div>
     </main>
 <?php get_footer() ?>

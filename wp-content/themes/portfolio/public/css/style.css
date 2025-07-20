@@ -174,22 +174,23 @@ body.js .animate.scroll-animation {
   will-change: opacity, transform;
 }
 
-.rectangle:after {
+body::after {
   content: "";
   position: fixed;
-  background-color: #2b2a2a;
-  width: 30%;
-  height: 140vh;
-  rotate: -15deg;
+  top: 0;
+  left: 10%;
+  width: 20vw;
+  height: 100vh;
+  background-color: #2B2A2A;
+  transform: skewX(30.5deg);
+  transform-origin: top right;
   z-index: -1;
-  top: -5rem;
-  left: 55%;
+  pointer-events: none;
 }
 @media (min-width: 800px) {
-  .rectangle:after {
-    left: 65%;
-    width: 10%;
-    rotate: -29deg;
+  body::after {
+    width: 10vw;
+    left: 50%;
   }
 }
 
@@ -239,6 +240,7 @@ body.js .animate.scroll-animation {
   min-height: 0.2rem;
   border-radius: 5px;
   text-align: center;
+  transition: 0.5s;
 }
 .main-nav nav {
   visibility: hidden;
@@ -247,10 +249,10 @@ body.js .animate.scroll-animation {
   top: 0;
   width: 100%;
   height: 100%;
-  transition: 1s;
+  transition: 0.7s ease-in-out;
   z-index: 1;
   background-color: black;
-  padding-top: 60%;
+  padding-top: 30%;
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -262,6 +264,9 @@ body.js .animate.scroll-animation {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.2rem;
 }
+.main-nav nav li:last-child {
+  border: none;
+}
 .main-nav nav .contact-nav {
   border-bottom: none;
 }
@@ -269,6 +274,17 @@ body.js .animate.scroll-animation {
   visibility: visible;
   right: 0;
   display: block;
+}
+.main-nav input:checked ~ label span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  transition: 0.5s;
+}
+.main-nav input:checked ~ label span:nth-child(2) {
+  opacity: 0;
+}
+.main-nav input:checked ~ label span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  transition: 0.5s;
 }
 @media (min-width: 800px) {
   .main-nav input, .main-nav label {

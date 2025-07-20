@@ -69,9 +69,7 @@
         </section>
         <a href="<?= get_post_type_archive_link('project') ?>" title="Retourner à la page des projets"
            class="return_to_projects animate">Retour aux projets</a>
-        <div class="rectangle"></div>
     </main>
-
 <?php endwhile; else: ?>
     <p>Ce projet n'existe pas.</p>
 <?php endif;

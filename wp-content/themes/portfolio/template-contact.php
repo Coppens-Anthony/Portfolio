@@ -99,6 +99,5 @@ Template Name: Contact Page
                 </form>
             </section>
         </div>
-        <div class="rectangle"></div>
     </main>
 <?php get_footer(); ?>

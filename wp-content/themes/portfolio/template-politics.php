@@ -1,7 +1,7 @@
 <?php
 
 /*
-Template Name: Legacies Page
+Template Name: Politics Page
 */
 
 
@@ -55,7 +55,6 @@ get_header();
                 <?= get_field('law') ?>
             </article>
         </section>
-        <div class="rectangle"></div>
     </main>
 <?php
 get_footer();

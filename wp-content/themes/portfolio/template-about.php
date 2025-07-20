@@ -68,7 +68,6 @@ get_header();
                 <?php endif; ?>
             </div>
         </section>
-        <div class="rectangle"></div>
     </main>
 <?php
 get_footer();

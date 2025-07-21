@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="img_container">
-                <?= wp_get_attachment_image(get_field('description_img'), 'desc'); ?>
+                <?= wp_get_attachment_image(get_field('description_img'), 'medium_large'); ?>
             </div>
         </section>
         <section class="general_content functionalities animate">

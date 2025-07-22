@@ -780,8 +780,8 @@ body::after {
 }
 .about .competencies .highway-slider .highway-lane {
   display: flex;
-  width: 2864px;
-  animation: scroll 10s linear infinite;
+  width: 15360px;
+  animation: scroll 45s linear infinite;
   gap: 7rem;
 }
 @keyframes scroll {
@@ -789,14 +789,14 @@ body::after {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-1432px);
+    transform: translateX(-7680px);
   }
 }
 .about .competencies .highway-slider .highway-lane .highway-card {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 4%;
+  width: 1.5%;
   flex-shrink: 0;
 }
 .about .competencies .highway-slider .highway-lane .highway-card img {

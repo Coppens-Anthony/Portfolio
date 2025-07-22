@@ -59,8 +59,8 @@
 
       .highway-lane {
         display: flex;
-        width: calc(179px * 16);
-        animation: scroll 10s linear infinite;
+        width: calc(160px * 96);
+        animation: scroll 45s linear infinite;
         gap: 7rem;
 
         @keyframes scroll {
@@ -68,7 +68,7 @@
             transform: translateX(0);
           }
           100% {
-            transform: translateX(calc(-179px * 8));
+            transform: translateX(calc(-160px * 48));
           }
         }
 
@@ -76,7 +76,7 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 4%;
+          width: 1.5%;
           flex-shrink: 0;
 
           img {

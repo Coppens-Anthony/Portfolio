@@ -36,20 +36,31 @@ get_header();
                 <?= wp_get_attachment_image(get_field('me_img'), 'medium'); ?>
             </div>
         </div>
+
+
         <section class="competencies animate">
             <h3>Mes compétences</h3>
             <div class="highway-slider">
-                <?php if (have_rows('competencies_slider')): ?>
+                <?php if (have_rows('competencies_slider')):
+                    $items = [];
+                    while (have_rows('competencies_slider')): the_row();
+                        $items[] = [
+                            'image' => get_sub_field('image'),
+                            'alt' => get_sub_field('image_alt')
+                        ];
+                    endwhile; ?>
                     <ul class="highway-lane">
-                        <?php while (have_rows('competencies_slider')): the_row(); ?>
-                            <li class="highway-card">
-                                <img src="<?= get_sub_field('image') ?>" alt="<?= get_sub_field('image_alt') ?>">
-                            </li>
-                        <?php endwhile; ?>
+                        <?php for ($i = 0; $i < 6; $i++):
+                            foreach ($items as $item): ?>
+                                <li class="highway-card">
+                                    <img src="<?= $item['image'] ?>" alt="<?= $item['alt'] ?>">
+                                </li>
+                            <?php endforeach; endfor; ?>
                     </ul>
                 <?php endif; ?>
             </div>
         </section>
+
         <section class="scholar">
             <h3 class="animate">Mon parcours scolaire</h3>
             <div>
